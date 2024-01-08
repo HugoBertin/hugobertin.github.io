@@ -1,0 +1,4 @@
+baseURL = ""
+languageCode = 'en-us'
+title = 'Profil de Hugo Bertin'
+theme = 'hugo-profile'
