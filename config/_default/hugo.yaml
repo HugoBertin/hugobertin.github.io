@@ -1,0 +1,38 @@
+params:
+    navbar:
+        align: ms-auto
+        brandLogo: "img/bureautique.png" # Logo for the brand | default is the favicon variable
+        brandName: "Hugo Bertin" # Brand name for the brand | default is the title variable
+        searchPlaceholder: "Ctrl + k pour chercher..."
+    
+
+    footer:
+        # recentPosts: false
+        socialNetworks:
+          github: https://github.com/HugoBertin
+          linkedin: https://www.linkedin.com/in/hugo-bertin-6160031b8/
+          # twitter: https://twitter.com
+          # instagram: https://instagram.com
+          # facebook: https://facebook.com
+
+    sectionPagesMenu: main
+
+menus:
+  main:
+  - name: À propos
+    pageRef: /
+    weight: 10
+  - name: Expérience
+    pageRef: /products
+    weight: 20
+  - name: Formation
+    pageRef: /services
+    weight: 30
+  - name: Contact
+    pageRef: /services
+    weight: 40
+  - name: Blogs
+    pageRef: /blogs
+    weight: 50
+
+languageCode: fr-FR

@@ -1,0 +1,5 @@
+baseURL = "https://hugobertin.github.io"
+languageCode = 'en-us'
+title = 'Hugo Bertin'
+theme = 'hugo-profile'
+
