@@ -31,8 +31,8 @@ params:
     enable: true
     intro: "Bonjour, je suis"
     title: "Hugo."
-    subtitle: "I build things for the web"
-    content: "Ingénieur du numérique passionné par la tech.  A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+    subtitle: "Ingénieur du numérique"
+    content: "Passionné par la tech. Toujours à la quête des nouvelles technologies pour développer des projets."
     image: /images/Photo.jpg
     bottomImage:
       enable: true
@@ -61,7 +61,7 @@ params:
     content: |-
       Je suis ingénieur du numérique. Actuellement, je travaille en tant qu'ingénieur logiciel au sein de [Sopra Steria](https://www.soprasteria.com/fr) à Paris. 
 
-      Je travaille  
+      J'interviens au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr).
     skills:
       enable: true
       title: "Quelques technologies que j'ai pu utiliser :"
@@ -74,7 +74,7 @@ params:
         - "Python"
         - "Angular"
         - "Typescript"
-        - "Selenium Webdriver"
+        - "[Selenium Webdriver](https://www.selenium.dev/)"
   
   # Experience
   experience:
