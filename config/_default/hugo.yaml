@@ -1,4 +1,5 @@
 languageCode: fr-FR
+baseURL: "https://hugobertin.github.io"
 
 params:
   favicon: "/favicon.ico"
@@ -8,9 +9,209 @@ params:
       brandName: "Hugo Bertin" # Brand name for the brand | default is the title variable
       disableSearch: true
       # searchPlaceholder: "Ctrl + k pour chercher..."
+      stickyNavBar:
+        enable : true
+        showOnScrollUp : true
+      menus:
+          disableAbout: true
+          disableExperience: true
+          disableEducation: true
+          disableProjects: true
+          disableAchievements: true
+          disableContact: true
   
+#Languages
+defaultContentLanguage: "fr"
+defaultContentLanguageInSubdir: true
+languages:
+  fr:
+    languageName: Français
+    menu:
+      main:
+      - name: À propos
+        url: /fr/#About
+        weight: 1
+      - name: Expérience
+        url: /fr/#experience
+        weight: 2
+      - name: Formation
+        url: /fr/#education
+        weight: 3
+      - name: Blogs
+        pageRef: /blogs
+        weight: 4
+      #Dropdown menu
+      - identifier: Languages
+        title: Example dropdown menu
+        name: 🇫🇷 FR
+        weight: 5
+      - identifier: Languages 1
+        title: Click here to switch to English
+        name: 🇬🇧 EN
+        url: /en
+        parent: Languages
+        weight: 1
+      - identifier: Languages 2
+        title: example dropdown 2
+        name: 🇨🇳 中文
+        url: /cn
+        parent: Languages
+        weight: 2
 
-  footer:
+    hero:
+      enable: true
+      intro: "Bonjour, je suis"
+      title: "Hugo."
+      subtitle: "Ingénieur du numérique"
+      content: "Passionné par la tech. Toujours à la quête des nouvelles technologies pour développer des projets."
+      image: /images/Photo.jpg
+      bottomImage:
+        enable: true
+      # roundImage: true # Make hero image circular | default false
+      button:
+        enable: true
+        name: "CV"
+        url: "#"
+        download: true
+        newPage: false
+      socialLinks:
+        fontAwesomeIcons:
+          - icon: fab fa-github
+            url: https://github.com/HugoBertin
+          - icon: fab fa-linkedin-in
+            url: https://www.linkedin.com/in/hugo-bertin-6160031b8/
+        customIcons:
+          - icon: /favicon.ico
+            url: "https://example.com"
+      
+    # About
+    about:
+      enable: true
+      title: "À propos"
+      image: "/images/Photo.jpg"
+      content: |-
+        Je suis ingénieur du numérique. Actuellement, je travaille en tant qu'ingénieur logiciel au sein de [Sopra Steria](https://www.soprasteria.com/fr) à Paris. 
+
+        J'interviens au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr).
+      skills:
+        enable: true
+        title: "Quelques technologies que j'ai pu utiliser :"
+        items:
+          - "HTML"
+          - "CSS"
+          - "JavaScript"
+          - "SQL"
+          - "Java"
+          - "Python"
+          - "Angular"
+          - "Typescript"
+          - "[Selenium Webdriver](https://www.selenium.dev/)"
+    
+    # Experience
+    experience:
+      enable: true
+      title: "Expérience"
+      items:
+        - job: "Ingénieur logiciel - Junior"
+          company: "Sopra Steria"
+          companyUrl: "https://www.soprasteria.com/fr"
+          date: "Septembre 2023 - Présent"
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+          info:
+            enable: false
+          content: |
+            À la suite de mon stage de fin d'étude, j'ai eu l'opportunité de continuer mon aventure au sein de [Sopra Steria](https://www.soprasteria.com/fr) et continuer ma mission au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
+
+            - Réalisation de dossiers de conception
+            - Mise en place d'architecture
+            - Développement en Java/Angular
+            - Réalisation et automatisation des tests unitaires
+
+        - job: "Stage de fin d'étude en développement informatique"
+          company: "Sopra Steria"
+          companyUrl: "https://www.soprasteria.com/fr"
+          date: "Avril 2023 - Septembre 2023"
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+          info:
+            enable: false
+          content: |
+            En tant que stagiaire de la division Banque de [Sopra Steria](https://www.soprasteria.com/fr), j'ai pu intervenir en tant que prestataire au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
+
+            - Réalisation de dossiers de conception
+            - Mise en place d'architecture
+            - Développement en Java/Angular
+            - Réalisation et automatisation des tests unitaires
+
+        - job: "Stage en développement et analyse de données"
+          company: "FARECO - FAYAT"
+          companyUrl: "https://fareco.fayat.com"
+          date: "Septembre 2021 - Février 2022"
+          info:
+            enable: false
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+          content: |
+            Stagiaire en simulation du traffic routier : 
+            - Amélioration d'outil de test pour l'étude des technologies V2X avec Python et le simulateur [SUMO](https://sumo.dlr.de/docs/index.html)
+
+    # Education
+    education:
+      enable: true
+      title: "Formation"
+      index: false
+      items:
+        - title: "Formation d'ingénieur Spécialité Architecte des Systèmes d'Information"
+          school:
+            name: "Institut Supérieur d'Électronique de Paris (ISEP)"
+            url: "https://www.isep.fr/cycle-ingenieur/"
+          date: "2020 - 2023"
+          content: |-
+            Extracurricular Activities
+              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        - title: "Semestre d'échange à l'international"
+          school:
+            name: "Université du Québec à Montréal (UQÀM)"
+            url: "https://uqam.ca"
+          date: "2022 - 2023"
+          content: |-
+            Extracurricular Activities
+              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        - title: "Classe préparatoire MPSI/PSI"
+          school:
+            name: "Cycle Préparatoire Associées ISEP-Stanislas"
+            url: "https://www.isep.fr/classes-preparatoires-associees-2-3/"
+          date: "2018 - 2020"
+          content: |-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a orci massa. Aenean et ipsum non libero tristique vehicula eget et nisl. Ut eget mauris efficitur, tempor ex quis, tempus magna. Donec sed mauris quam. Quisque nec ante ac arcu suscipit commodo. Proin tempus malesuada augue, eget rhoncus tortor congue at. Vestibulum vel dignissim lorem. Vivamus luctus at arcu suscipit dapibus. Nam ligula leo, semper quis dolor ultricies, auctor tempus nisi. Ut posuere turpis nec metus efficitur, posuere tempor dui semper. Cras hendrerit urna sit amet gravida facilisis. Suspendisse mollis sed sem vitae porta.
+            - Projet TIPE de 2e année : Modélisation de ski nautique avec Arduino
+            - Projet TIPE de 1er année : Étude et modélisation du problème du sac à dos en Python
+            Extracurricular Activities
+              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+          featuredLink:
+            enable: true
+            name: "My academic record"
+            url: "https://example.com"
+        - title: "Baccalauréat Scientifique"
+          school:
+            name: "Lycée Bossuet Notre-Dame"
+            url: "https://www.bossuetnotredame.org/lycee-bossuet-notre-dame/"
+          date: "2018"
+          content: |-
+            - Mention Bien
+            - Spécialité Mathématiques
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+    
+    footer:
       recentPosts:
         path: "blogs"
         count: 3
@@ -23,161 +224,430 @@ params:
         # twitter: https://twitter.com
         # instagram: https://instagram.com
         # facebook: https://facebook.com
+    
+    # Pour les posts, blogs
+    singlePages:
+      readTime:
+        content: "min de lecture"
 
-  sectionPagesMenu: main
+    terms:
+      read: "Lire"
+      toc: "Sommaire"
+      copyright: "All rights reserved"
+      pageNotFound: "Page not found"
+      emailText: "Check out this site"
+      readingTime: "de lecture"
+
+    datesFormat:
+      article: ":date_long"
+      articleList: ":date_long"
+      articleRecent: ":date_long"
+
+  en:
+    languageName: English
+    menu:
+      main:
+      - name: About
+        url: /en/#About
+        weight: 1
+      - name: Experience
+        url: /en/#experience
+        weight: 2
+      - name: Education
+        url: /en/#education
+        weight: 3
+      # - name: Blogs
+      #   pageRef: /blogs
+      #   weight: 4
+      #Dropdown menu
+      - identifier: Languages
+        title: Example dropdown menu
+        name: 🇬🇧 ENG
+        weight: 5
+      - identifier: Languages 1
+        title: Cliquer ici pour changer en français
+        name: 🇫🇷 FR
+        url: /fr
+        parent: Languages
+        weight: 1
+      - identifier: Languages 2
+        title: example dropdown 2
+        name: 🇨🇳 中文
+        url: /cn
+        parent: Languages
+        weight: 2
+    
+    Title: Hugo Bertin EN
+    slug: project
+    description: Test
+    
+    hero:
+      enable: true
+      intro: "Hello, I'm"
+      title: "Hugo."
+      subtitle: "Engineer in tech"
+      content: "Passionné par la tech. Toujours à la quête des nouvelles technologies pour développer des projets."
+      image: /images/Photo.jpg
+      bottomImage:
+        enable: true
+      # roundImage: true # Make hero image circular | default false
+      button:
+        enable: true
+        name: "Resume"
+        url: "#"
+        download: true
+        newPage: false
+      socialLinks:
+        fontAwesomeIcons:
+          - icon: fab fa-github
+            url: https://github.com/HugoBertin
+          - icon: fab fa-linkedin-in
+            url: https://www.linkedin.com/in/hugo-bertin-6160031b8/
+        customIcons:
+          - icon: /favicon.ico
+            url: "https://example.com"
+        
+    # About EN
+    about:
+      enable: true
+      title: "About"
+      image: "/images/Photo.jpg"
+      content: |-
+        Je suis ingénieur du numérique. Actuellement, je travaille en tant qu'ingénieur logiciel au sein de [Sopra Steria](https://www.soprasteria.com/fr) à Paris. 
+
+        J'interviens au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr).
+      skills:
+        enable: true
+        title: "Quelques technologies que j'ai pu utiliser :"
+        items:
+          - "HTML"
+          - "CSS"
+          - "JavaScript"
+          - "SQL"
+          - "Java"
+          - "Python"
+          - "Angular"
+          - "Typescript"
+          - "[Selenium Webdriver](https://www.selenium.dev/)"
+    
+    # Experience EN
+    experience:
+      enable: true
+      title: "Experience"
+      items:
+        - job: "Ingénieur logiciel - Junior"
+          company: "Sopra Steria"
+          companyUrl: "https://www.soprasteria.com/fr"
+          date: "Septembre 2023 - Présent"
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+          info:
+            enable: false
+          content: |
+            À la suite de mon stage de fin d'étude, j'ai eu l'opportunité de continuer mon aventure au sein de [Sopra Steria](https://www.soprasteria.com/fr) et continuer ma mission au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
+
+            - Réalisation de dossiers de conception
+            - Mise en place d'architecture
+            - Développement en Java/Angular
+            - Réalisation et automatisation des tests unitaires
+
+        - job: "Stage de fin d'étude en développement informatique"
+          company: "Sopra Steria"
+          companyUrl: "https://www.soprasteria.com/fr"
+          date: "Avril 2023 - Septembre 2023"
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+          info:
+            enable: false
+          content: |
+            En tant que stagiaire de la division Banque de [Sopra Steria](https://www.soprasteria.com/fr), j'ai pu intervenir en tant que prestataire au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
+
+            - Réalisation de dossiers de conception
+            - Mise en place d'architecture
+            - Développement en Java/Angular
+            - Réalisation et automatisation des tests unitaires
+
+        - job: "Stage en développement et analyse de données"
+          company: "FARECO - FAYAT"
+          companyUrl: "https://fareco.fayat.com"
+          date: "Septembre 2021 - Février 2022"
+          info:
+            enable: false
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+          content: |
+            Stagiaire en simulation du traffic routier : 
+            - Amélioration d'outil de test pour l'étude des technologies V2X avec Python et le simulateur [SUMO](https://sumo.dlr.de/docs/index.html)
+
+    # Education EN
+    education:
+      enable: true
+      title: "Education"
+      index: false
+      items:
+        - title: "Formation d'ingénieur Spécialité Architecte des Systèmes d'Information"
+          school:
+            name: "Paris Institute of Digital Technology (ISEP)"
+            url: "https://www.isep.fr/cycle-ingenieur/"
+          date: "2020 - 2023"
+          content: |-
+            Extracurricular Activities
+              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        - title: "Semestre d'échange à l'international"
+          school:
+            name: "Université du Québec à Montréal (UQÀM)"
+            url: "https://uqam.ca"
+          date: "2022 - 2023"
+          content: |-
+            Extracurricular Activities
+              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        - title: "Classe préparatoire MPSI/PSI"
+          school:
+            name: "Cycle Préparatoire Associées ISEP-Stanislas"
+            url: "https://www.isep.fr/classes-preparatoires-associees-2-3/"
+          date: "2018 - 2020"
+          content: |-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a orci massa. Aenean et ipsum non libero tristique vehicula eget et nisl. Ut eget mauris efficitur, tempor ex quis, tempus magna. Donec sed mauris quam. Quisque nec ante ac arcu suscipit commodo. Proin tempus malesuada augue, eget rhoncus tortor congue at. Vestibulum vel dignissim lorem. Vivamus luctus at arcu suscipit dapibus. Nam ligula leo, semper quis dolor ultricies, auctor tempus nisi. Ut posuere turpis nec metus efficitur, posuere tempor dui semper. Cras hendrerit urna sit amet gravida facilisis. Suspendisse mollis sed sem vitae porta.
+            - Projet TIPE de 2e année : Modélisation de ski nautique avec Arduino
+            - Projet TIPE de 1er année : Étude et modélisation du problème du sac à dos en Python
+            Extracurricular Activities
+              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+          featuredLink:
+            enable: true
+            name: "My academic record"
+            url: "https://example.com"
+        - title: "Baccalauréat Scientifique"
+          school:
+            name: "Lycée Bossuet Notre-Dame"
+            url: "https://www.bossuetnotredame.org/lycee-bossuet-notre-dame/"
+          date: "2018"
+          content: |-
+            - Mention Bien
+            - Spécialité Mathématiques
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+    
+    footer:
+      socialNetworks:
+        github: https://github.com/HugoBertin
+        linkedin: https://www.linkedin.com/in/hugo-bertin-6160031b8/
+        # twitter: https://twitter.com
+        # instagram: https://instagram.com
+        # facebook: https://facebook.com
+  
+  cn:
+    languageName: English
+    menu:
+      main:
+      - name: 关于我
+        url: /cn/#about
+        weight: 1
+      - name: 经验
+        url: /cn/#experience
+        weight: 2
+      - name: 教育
+        url: /cn/#education
+        weight: 3
+      # - name: Blogs
+      #   pageRef: /blogs
+      #   weight: 4
+      #Dropdown menu
+      - identifier: Languages
+        title: Example dropdown menu
+        name: 🇨🇳 中文
+        weight: 5
+      - identifier: Languages 1
+        title: Cliquer ici pour changer en français
+        name: 🇫🇷 FR
+        url: /fr
+        parent: Languages
+        weight: 1
+      - identifier: Languages 2
+        title: Click here to switch to English
+        name: 🇬🇧 ENG
+        url: /en
+        parent: Languages
+        weight: 2
+    
+    Title: Hugo Bertin 中文
+    slug: project
+    description: Test
+    
+    hero:
+      enable: true
+      intro: "你好， 我是"
+      title: "Hugo."
+      subtitle: "技术工程师"
+      content: "Passionné par la tech. Toujours à la quête des nouvelles technologies pour développer des projets."
+      image: /images/Photo.jpg
+      bottomImage:
+        enable: true
+      # roundImage: true # Make hero image circular | default false
+      button:
+        enable: true
+        name: "简历"
+        url: "#"
+        download: true
+        newPage: false
+      socialLinks:
+        fontAwesomeIcons:
+          - icon: fab fa-github
+            url: https://github.com/HugoBertin
+          - icon: fab fa-linkedin-in
+            url: https://www.linkedin.com/in/hugo-bertin-6160031b8/
+        customIcons:
+          - icon: /favicon.ico
+            url: "https://example.com"
+        
+    # About
+    about:
+      enable: true
+      title: "关于我"
+      image: "/images/Photo.jpg"
+      content: |-
+        Je suis ingénieur du numérique. Actuellement, je travaille en tant qu'ingénieur logiciel au sein de [Sopra Steria](https://www.soprasteria.com/fr) à Paris. 
+
+        J'interviens au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr).
+      skills:
+        enable: true
+        title: "Quelques technologies que j'ai pu utiliser :"
+        items:
+          - "HTML"
+          - "CSS"
+          - "JavaScript"
+          - "SQL"
+          - "Java"
+          - "Python"
+          - "Angular"
+          - "Typescript"
+          - "[Selenium Webdriver](https://www.selenium.dev/)"
+    
+    # Experience
+    experience:
+      enable: true
+      title: "经验"
+      items:
+        - job: "Ingénieur logiciel - Junior"
+          company: "Sopra Steria"
+          companyUrl: "https://www.soprasteria.com/fr"
+          date: "Septembre 2023 - Présent"
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+          info:
+            enable: false
+          content: |
+            À la suite de mon stage de fin d'étude, j'ai eu l'opportunité de continuer mon aventure au sein de [Sopra Steria](https://www.soprasteria.com/fr) et continuer ma mission au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
+
+            - Réalisation de dossiers de conception
+            - Mise en place d'architecture
+            - Développement en Java/Angular
+            - Réalisation et automatisation des tests unitaires
+
+        - job: "Stage de fin d'étude en développement informatique"
+          company: "Sopra Steria"
+          companyUrl: "https://www.soprasteria.com/fr"
+          date: "Avril 2023 - Septembre 2023"
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+          info:
+            enable: false
+          content: |
+            En tant que stagiaire de la division Banque de [Sopra Steria](https://www.soprasteria.com/fr), j'ai pu intervenir en tant que prestataire au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
+
+            - Réalisation de dossiers de conception
+            - Mise en place d'architecture
+            - Développement en Java/Angular
+            - Réalisation et automatisation des tests unitaires
+
+        - job: "Stage en développement et analyse de données"
+          company: "FARECO - FAYAT"
+          companyUrl: "https://fareco.fayat.com"
+          date: "Septembre 2021 - Février 2022"
+          info:
+            enable: false
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+          content: |
+            Stagiaire en simulation du traffic routier : 
+            - Amélioration d'outil de test pour l'étude des technologies V2X avec Python et le simulateur [SUMO](https://sumo.dlr.de/docs/index.html)
+
+    # Education
+    education:
+      enable: true
+      title: "教育"
+      index: false
+      items:
+        - title: "工程师培训 - 专业 : 信息技术 和 计算机科学"
+          school:
+            name: "Institut Supérieur d'Électronique de Paris (ISEP)"
+            url: "https://www.isep.fr/cycle-ingenieur/"
+          date: "2020 - 2023"
+          content: |-
+            巴黎高等电子学院
+            法国数字技术类高等工程师学校
+            Extracurricular Activities
+              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        - title: "国际交流学期"
+          school:
+            name: "Université du Québec à Montréal (UQÀM)"
+            url: "https://uqam.ca"
+          date: "2022 - 2023"
+          content: |-
+            蒙特利尔魁北克大学
+            Extracurricular Activities
+              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        - title: "Classe préparatoire MPSI/PSI"
+          school:
+            name: "Cycle Préparatoire Associées ISEP-Stanislas"
+            url: "https://www.isep.fr/classes-preparatoires-associees-2-3/"
+          date: "2018 - 2020"
+          content: |-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a orci massa. Aenean et ipsum non libero tristique vehicula eget et nisl. Ut eget mauris efficitur, tempor ex quis, tempus magna. Donec sed mauris quam. Quisque nec ante ac arcu suscipit commodo. Proin tempus malesuada augue, eget rhoncus tortor congue at. Vestibulum vel dignissim lorem. Vivamus luctus at arcu suscipit dapibus. Nam ligula leo, semper quis dolor ultricies, auctor tempus nisi. Ut posuere turpis nec metus efficitur, posuere tempor dui semper. Cras hendrerit urna sit amet gravida facilisis. Suspendisse mollis sed sem vitae porta.
+            - Projet TIPE de 2e année : Modélisation de ski nautique avec Arduino
+            - Projet TIPE de 1er année : Étude et modélisation du problème du sac à dos en Python
+            Extracurricular Activities
+              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+          featuredLink:
+            enable: true
+            name: "My academic record"
+            url: "https://example.com"
+        - title: "科学学士学位"
+          school:
+            name: "Bossuet Notre-Dame 高中"
+            url: "https://www.bossuetnotredame.org/lycee-bossuet-notre-dame/"
+          date: "2018"
+          content: |-
+            - Mention Bien
+            - Spécialité Mathématiques
+          featuredLink:
+            enable: true
+            url: "https://example.com"
+
+    footer:
+        socialNetworks:
+          github: https://github.com/HugoBertin
+          linkedin: https://www.linkedin.com/in/hugo-bertin-6160031b8/
+          # twitter: https://twitter.com
+          # instagram: https://instagram.com
+          # facebook: https://facebook.com
+
+  # sectionPagesMenu: main
 
     # Hero
-  hero:
-    enable: true
-    intro: "Bonjour, je suis"
-    title: "Hugo."
-    subtitle: "Ingénieur du numérique"
-    content: "Passionné par la tech. Toujours à la quête des nouvelles technologies pour développer des projets."
-    image: /images/Photo.jpg
-    bottomImage:
-      enable: true
-    # roundImage: true # Make hero image circular | default false
-    button:
-      enable: true
-      name: "Resume"
-      url: "#"
-      download: true
-      newPage: false
-    socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://github.com/HugoBertin
-        - icon: fab fa-linkedin-in
-          url: https://www.linkedin.com/in/hugo-bertin-6160031b8/
-      customIcons:
-        - icon: /favicon.ico
-          url: "https://example.com"
-      
-  # About
-  about:
-    enable: true
-    title: "À propos"
-    image: "/images/Photo.jpg"
-    content: |-
-      Je suis ingénieur du numérique. Actuellement, je travaille en tant qu'ingénieur logiciel au sein de [Sopra Steria](https://www.soprasteria.com/fr) à Paris. 
-
-      J'interviens au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr).
-    skills:
-      enable: true
-      title: "Quelques technologies que j'ai pu utiliser :"
-      items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
-        - "SQL"
-        - "Java"
-        - "Python"
-        - "Angular"
-        - "Typescript"
-        - "[Selenium Webdriver](https://www.selenium.dev/)"
   
-  # Experience
-  experience:
-    enable: true
-    title: "Expérience"
-    items:
-      - job: "Ingénieur logiciel - Junior"
-        company: "Sopra Steria"
-        companyUrl: "https://www.soprasteria.com/fr"
-        date: "Septembre 2023 - Présent"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: false
-        content: |
-          À la suite de mon stage de fin d'étude, j'ai eu l'opportunité de continuer mon aventure au sein de [Sopra Steria](https://www.soprasteria.com/fr) et continuer ma mission au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
-
-          - Réalisation de dossiers de conception
-          - Mise en place d'architecture
-          - Développement en Java/Angular
-          - Réalisation et automatisation des tests unitaires
-
-      - job: "Stage de fin d'étude en développement informatique"
-        company: "Sopra Steria"
-        companyUrl: "https://www.soprasteria.com/fr"
-        date: "Avril 2023 - Septembre 2023"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: false
-        content: |
-          En tant que stagiaire de la division Banque de [Sopra Steria](https://www.soprasteria.com/fr), j'ai pu intervenir en tant que prestataire au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
-
-          - Réalisation de dossiers de conception
-          - Mise en place d'architecture
-          - Développement en Java/Angular
-          - Réalisation et automatisation des tests unitaires
-
-      - job: "Stage en développement et analyse de données"
-        company: "FARECO - FAYAT"
-        companyUrl: "https://fareco.fayat.com"
-        date: "Septembre 2021 - Février 2022"
-        info:
-          enable: false
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          Stagiaire en simulation du traffic routier : 
-          - Amélioration d'outil de test pour l'étude des technologies V2X avec Python et le simulateur [SUMO](https://sumo.dlr.de/docs/index.html)
-
-  # Education
-  education:
-    enable: true
-    title: "Formation"
-    index: false
-    items:
-      - title: "Formation d'ingénieur Spécialité Architecte des Systèmes d'Information"
-        school:
-          name: "Institut Supérieur d'Électronique de Paris (ISEP)"
-          url: "https://www.isep.fr/cycle-ingenieur/"
-        date: "2020 - 2023"
-        content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Semestre d'échange à l'international"
-        school:
-          name: "Université du Québec à Montréal (UQÀM)"
-          url: "https://uqam.ca"
-        date: "2022 - 2023"
-        content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Classe préparatoire MPSI/PSI"
-        school:
-          name: "Cycle Préparatoire Associées ISEP-Stanislas"
-          url: "https://www.isep.fr/classes-preparatoires-associees-2-3/"
-        date: "2018 - 2020"
-        content: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a orci massa. Aenean et ipsum non libero tristique vehicula eget et nisl. Ut eget mauris efficitur, tempor ex quis, tempus magna. Donec sed mauris quam. Quisque nec ante ac arcu suscipit commodo. Proin tempus malesuada augue, eget rhoncus tortor congue at. Vestibulum vel dignissim lorem. Vivamus luctus at arcu suscipit dapibus. Nam ligula leo, semper quis dolor ultricies, auctor tempus nisi. Ut posuere turpis nec metus efficitur, posuere tempor dui semper. Cras hendrerit urna sit amet gravida facilisis. Suspendisse mollis sed sem vitae porta.
-          - Projet TIPE de 2e année : Modélisation de ski nautique avec Arduino
-          - Projet TIPE de 1er année : Étude et modélisation du problème du sac à dos en Python
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "Baccalauréat Scientifique"
-        school:
-          name: "Lycée Bossuet Notre-Dame"
-          url: "https://www.bossuetnotredame.org/lycee-bossuet-notre-dame/"
-        content: |-
-          - Mention Bien
-          - Spécialité Mathématiques
-        featuredLink:
-          enable: true
-          url: "https://example.com"
 
   singlePages:
     readTime:
@@ -197,10 +667,27 @@ params:
     articleList: ":date_long"
     articleRecent: ":date_long"
 
-Menus:
-  main:
-  - name: Blogs
-    pageRef: /blogs
-    weight: 1
+# Menus:
+#   main:
+#   - name: Blogs
+#     pageRef: /blogs
+#     weight: 1
+#     #Dropdown menu
+#   - identifier: 🇫🇷 FR
+#     title: Example dropdown menu
+#     name: 🇫🇷 FR
+#     weight: 3
+#   - identifier: dropdown1
+#     title: example dropdown 1
+#     name: 🇬🇧 ENG
+#     url: /#
+#     parent: 🇫🇷 FR
+#     weight: 1
+#   - identifier: dropdown2
+#     title: example dropdown 2
+#     name: 🇨🇳 中文
+#     url: /#
+#     parent: 🇫🇷 FR
+#     weight: 2
 
   
