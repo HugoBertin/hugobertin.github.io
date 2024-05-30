@@ -261,7 +261,7 @@ languages:
       #   weight: 4
       #Dropdown menu
       - identifier: Languages
-        title: Example dropdown menu
+        title: Languages options
         name: 🇬🇧 ENG
         weight: 5
       - identifier: Languages 1
