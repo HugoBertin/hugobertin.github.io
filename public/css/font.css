@@ -1,20 +1,35 @@
 
 /* Default font for body */
 body {
-    font-family: "Lora", serif !important;
+    font-family: "Lora", Georgia, serif !important;
 }
 
 /* secondary font */
 .secondary-font, #secondary-font {
-    font-family: "Lora", serif;
+    font-family: "Lora", Georgia, serif;
 }
 
 /* primary font */
 .primary-font, #primary-font {
-    font-family: "Alata", sans-serif;
+    font-family: "Alata", Helvetica, sans-serif;
 }
 
 /* Default font */
 .default-font, #default-font {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+
+/* .dropdown:hover .dropdown-menu {
+    display: block;
+} */
+
+  
+.logo-holder {
+    height: 44px;
+    margin-bottom: 1em;
+}
+
+.company-logo {
+    max-height: 100%;
+    width: auto;
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technologies on Hugo Bertin</title>
+    <link>https://hugobertin.github.io/fr/tags/technologies/</link>
+    <description>Recent content in Technologies on Hugo Bertin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 24 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hugobertin.github.io/fr/tags/technologies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Info ou intox sur la 5G</title>
+      <link>https://hugobertin.github.io/fr/blogs/1-5g/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://hugobertin.github.io/fr/blogs/1-5g/</guid>
+      <description>Introduction Ah la 5G, on en a tous entendu parler que ce soit à la télé ou sur nos téléphones par les pubs des opérateurs ou de nos politiciens. La 5G pour ceux qui ne connaissent pas trop c’est la \( 5^{ème}\) génération de standards pour la téléphonie mobile.&#xA;On a entendu dire que c’était révolutionnaire, mais on m’avait aussi dit que je verrai des voitures volantes et des chaussures auto laçantes avant 2020, donc bon.</description>
+    </item>
+  </channel>
+</rss>
