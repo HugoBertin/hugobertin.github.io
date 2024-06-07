@@ -20,7 +20,7 @@ params:
           disableAchievements: true
           disableContact: true
   
-#Languages
+#Languages FR
 defaultContentLanguage: "fr"
 defaultContentLanguageInSubdir: true
 languages:
@@ -37,14 +37,17 @@ languages:
       - name: Formation
         url: /fr/#education
         weight: 3
+      # - name: Projets
+      #   url: /fr/#projects
+      #   weight: 4
       - name: Blogs
         pageRef: /blogs
-        weight: 4
+        weight: 5
       #Dropdown menu
       - identifier: Languages
         title: Example dropdown menu
         name: 🇫🇷 FR
-        weight: 5
+        weight: 6
       - identifier: Languages 1
         title: Click here to switch to English
         name: 🇬🇧 EN
@@ -57,7 +60,8 @@ languages:
         url: /cn
         parent: Languages
         weight: 2
-
+    
+    #FR
     hero:
       enable: true
       intro: "Bonjour, je suis"
@@ -84,7 +88,7 @@ languages:
           - icon: /favicon.ico
             url: "https://example.com"
       
-    # About
+    # About FR
     about:
       enable: true
       title: "À propos"
@@ -107,7 +111,7 @@ languages:
           - "Typescript"
           - "[Selenium Webdriver](https://www.selenium.dev/)"
     
-    # Experience
+    # Experience FR
     experience:
       enable: true
       title: "Expérience"
@@ -118,6 +122,7 @@ languages:
           date: "Septembre 2023 - Présent"
           featuredLink:
             enable: true
+            name: "test"
             url: "https://example.com"
           info:
             enable: false
@@ -159,22 +164,37 @@ languages:
             Stagiaire en simulation du traffic routier : 
             - Amélioration d'outil de test pour l'étude des technologies V2X avec Python et le simulateur [SUMO](https://sumo.dlr.de/docs/index.html)
 
-    # Education
+    # Education FR
     education:
       enable: true
       title: "Formation"
       index: false
       items:
-        - title: "Formation d'ingénieur Spécialité Architecte des Systèmes d'Information"
+        - title: "Diplôme Universitaire (DU) langue et civilisation japonaises"
+          school:
+            name: "Université Paris Cité"
+            url: "https://u-paris.fr/"
+            logo: "/logo/logo-paris_cite.png"
+          date: "2023 - 2024"
+          content: |-
+            Cette formation est une initiation sérieuse à la langue japonaise, permettant d'accéder à un niveau "intermédiaire". Elle comprend une introduction à quelques aspects de la civilisation du Japon et de l'Asie orientale. 
+        - title: "Master d'ingénieur Spécialité Architecte des Systèmes d'Information"
           school:
             name: "Institut Supérieur d'Électronique de Paris (ISEP)"
             url: "https://www.isep.fr/cycle-ingenieur/"
             logo: "/logo/logo-isep.png"
           date: "2020 - 2023"
           content: |-
-            Extracurricular Activities
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+            Programme :
+              - Architecture des systèmes d’information
+              - Organisation des entreprises et des SI
+              - Génie Logiciel
+              - Cybersécurité
+              - Bases de données et Big Data
+          featuredLink:
+            enable: true
+            name: "Certificat LABELLIS"
+            url: "https://certificate.bcdiploma.com/check/6DF707C11DE4610BCFDC7092A741E7324EE0CBF0248A7EEC666955D68E4CA033STNXTjhLZ1NDY2FGRkdzTWRqZGFHby9xK1kzSm1wTUZnUEs2b1lpcStnd3htSmk0"
         - title: "Semestre d'échange à l'international"
           school:
             name: "Université du Québec à Montréal (UQÀM)"
@@ -182,25 +202,19 @@ languages:
             logo: "/logo/logo-uqam.jpg"
           date: "2022 - 2023"
           content: |-
-            Extracurricular Activities
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+            Programme :
+              - Génie logiciel analyse et modélisation
+              - Utilisation et administration des systèmes informatiques
+              - Organisation, gestion et système d'information
         - title: "Classe préparatoire MPSI/PSI"
           school:
             name: "Cycle Préparatoire Associées ISEP-Stanislas"
-            url: "https://www.isep.fr/classes-preparatoires-associees-2-3/"
+            url: "https://www.isep.fr/classes-preparatoires-associees/"
           date: "2018 - 2020"
           content: |-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a orci massa. Aenean et ipsum non libero tristique vehicula eget et nisl. Ut eget mauris efficitur, tempor ex quis, tempus magna. Donec sed mauris quam. Quisque nec ante ac arcu suscipit commodo. Proin tempus malesuada augue, eget rhoncus tortor congue at. Vestibulum vel dignissim lorem. Vivamus luctus at arcu suscipit dapibus. Nam ligula leo, semper quis dolor ultricies, auctor tempus nisi. Ut posuere turpis nec metus efficitur, posuere tempor dui semper. Cras hendrerit urna sit amet gravida facilisis. Suspendisse mollis sed sem vitae porta.
+            Programmes MPSI puis PSI :
             - Projet TIPE de 2e année : Modélisation de ski nautique avec Arduino
             - Projet TIPE de 1er année : Étude et modélisation du problème du sac à dos en Python
-            Extracurricular Activities
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-          featuredLink:
-            enable: true
-            name: "My academic record"
-            url: "https://example.com"
         - title: "Baccalauréat Scientifique"
           school:
             name: "Lycée Bossuet Notre-Dame"
@@ -210,9 +224,39 @@ languages:
           content: |-
             - Mention Bien
             - Spécialité Mathématiques
-          featuredLink:
-            enable: true
-            url: "https://example.com"
+
+    # # projects FR
+    # projects:
+    #   enable: true
+    #   title: "Projets"
+    #   items:
+    #     - title: A little story game
+    #       content: Un petit jeu dont vous êtes le héros jouable sur navigateur web.
+    #       image: /images/projects/profile.png
+    #       featured:
+    #         name: Demo
+    #         link: https://hugobertin.github.io/my-story-test/
+    #       badges:
+    #         - "Monogatari"
+    #         - "Javascript"
+    #       links:
+    #         - icon: fab fa-github
+    #           url: https://github.com/HugoBertin/my-story-test
+    #         - icon: fas fa-info
+    #           url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+      
+    #     - title: Kingdomino
+    #       content: Programmation du jeu Kingdomino en Java
+    #       image: /images/projects/kingdomino.png
+    #       featured:
+    #         name: Demo
+    #         link: https://google.com
+    #       badges:
+    #         - "Java"
+    #         - "School"
+    #       links:
+    #         - icon: fab fa-github
+    #           url: https://google.com
     
     footer:
       recentPosts:
@@ -237,7 +281,7 @@ languages:
       read: "Lire"
       toc: "Sommaire"
       copyright: "All rights reserved"
-      pageNotFound: "Page not found"
+      pageNotFound: "404 Page not found"
       emailText: "Check out this site"
       readingTime: "de lecture"
 
@@ -246,6 +290,7 @@ languages:
       articleList: ":date_long"
       articleRecent: ":date_long"
 
+  #EN
   en:
     languageName: English
     menu:
@@ -289,7 +334,7 @@ languages:
       intro: "Hello, I'm"
       title: "Hugo."
       subtitle: "Engineer in tech"
-      content: "Passionné par la tech. Toujours à la quête des nouvelles technologies pour développer des projets."
+      content: "Passionate about tech. Always on the lookout for new technologies to develop projects."
       image: /images/Photo.jpg
       bottomImage:
         enable: true
@@ -316,12 +361,12 @@ languages:
       title: "About"
       image: "/images/Photo.jpg"
       content: |-
-        Je suis ingénieur du numérique. Actuellement, je travaille en tant qu'ingénieur logiciel au sein de [Sopra Steria](https://www.soprasteria.com/fr) à Paris. 
-
-        J'interviens au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr).
+        I am a digital engineer. Currently, I work as a software engineer at [Sopra Steria](https://www.soprasteria.com/fr) in Paris.
+        
+        I am on assignment at [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.com/en).
       skills:
         enable: true
-        title: "Quelques technologies que j'ai pu utiliser :"
+        title: "Some technologies I have used:"
         items:
           - "HTML"
           - "CSS"
@@ -338,52 +383,51 @@ languages:
       enable: true
       title: "Experience"
       items:
-        - job: "Ingénieur logiciel - Junior"
+        - job: "Junior Software Engineer"
           company: "Sopra Steria"
-          companyUrl: "https://www.soprasteria.com/fr"
-          date: "Septembre 2023 - Présent"
+          companyUrl: "https://www.soprasteria.com/home"
+          date: "September 2023 - Present"
           featuredLink:
             enable: true
             url: "https://example.com"
           info:
             enable: false
           content: |
-            À la suite de mon stage de fin d'étude, j'ai eu l'opportunité de continuer mon aventure au sein de [Sopra Steria](https://www.soprasteria.com/fr) et continuer ma mission au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
+            Following my end-of-study internship, I had the opportunity to continue my journey at [Sopra Steria](https://www.soprasteria.com/home) and continue my assignment at [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.com/en).
 
-            - Réalisation de dossiers de conception
-            - Mise en place d'architecture
-            - Développement en Java/Angular
-            - Réalisation et automatisation des tests unitaires
+            - Creation of design documents
+            - Implementation of architecture
+            - Development in Java/Angular
+            - Creation and automation of unit tests
 
-        - job: "Stage de fin d'étude en développement informatique"
+        - job: "End-of-study internship in software development"
           company: "Sopra Steria"
-          companyUrl: "https://www.soprasteria.com/fr"
-          date: "Avril 2023 - Septembre 2023"
+          companyUrl: "https://www.soprasteria.com/home"
+          date: "April 2023 - September 2023"
           featuredLink:
             enable: true
             url: "https://example.com"
           info:
             enable: false
           content: |
-            En tant que stagiaire de la division Banque de [Sopra Steria](https://www.soprasteria.com/fr), j'ai pu intervenir en tant que prestataire au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
+            As an intern in the Banking division of [Sopra Steria](https://www.soprasteria.com/home), I had the opportunity to work as a consultant at [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.com/en).
+            - Creation of design documents
+            - Implementation of architecture
+            - Development in Java/Angular
+            - Creation and automation of unit tests
 
-            - Réalisation de dossiers de conception
-            - Mise en place d'architecture
-            - Développement en Java/Angular
-            - Réalisation et automatisation des tests unitaires
-
-        - job: "Stage en développement et analyse de données"
+        - job: "Internship in Development and Data Analysis"
           company: "FARECO - FAYAT"
-          companyUrl: "https://fareco.fayat.com"
-          date: "Septembre 2021 - Février 2022"
+          companyUrl: "https://fareco.fayat.com/en"
+          date: "September 2021 - February 2022"
           info:
             enable: false
           featuredLink:
             enable: true
             url: "https://example.com"
           content: |
-            Stagiaire en simulation du traffic routier : 
-            - Amélioration d'outil de test pour l'étude des technologies V2X avec Python et le simulateur [SUMO](https://sumo.dlr.de/docs/index.html)
+            Intern in Road Traffic Simulation:
+            - Improvement of testing tools for the study of V2X technologies using Python and the [SUMO](https://sumo.dlr.de/docs/index.html) simulator
 
     # Education EN
     education:
@@ -391,51 +435,64 @@ languages:
       title: "Education"
       index: false
       items:
-        - title: "Formation d'ingénieur Spécialité Architecte des Systèmes d'Information"
+        - title: "University Diploma (DU) in Japanese Language and Civilization"
+          school:
+            name: "Université Paris Cité"
+            url: "https://u-paris.fr/en/"
+            logo: "/logo/logo-paris_cite.png"
+          date: "2023 - 2024"
+          content: |-
+            This program is a serious introduction to the Japanese language, allowing students to reach an "intermediate" level. It includes an introduction to some aspects of the civilization of Japan and East Asia.
+        
+        - title: "Master of Engineering, specializing in Information Systems Architecture"
           school:
             name: "Paris Institute of Digital Technology (ISEP)"
             url: "https://www.isep.fr/cycle-ingenieur/"
+            logo: "/logo/logo-isep.png"
           date: "2020 - 2023"
           content: |-
-            Extracurricular Activities
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        - title: "Semestre d'échange à l'international"
+            Program:
+              - Information Systems Architecture
+              - Business and IT Organization
+              - Software Engineering
+              - Cybersecurity
+              - Databases and Big Data 
+          featuredLink:
+              enable: true
+              name: "LABELLIS Certificate"
+              url: "https://certificate.bcdiploma.com/check/6DF707C11DE4610BCFDC7092A741E7324EE0CBF0248A7EEC666955D68E4CA033STNXTjhLZ1NDY2FGRkdzTWRqZGFHby9xK1kzSm1wTUZnUEs2b1lpcStnd3htSmk0"
+        
+        - title: "International Exchange Semester"
           school:
             name: "Université du Québec à Montréal (UQÀM)"
             url: "https://uqam.ca"
+            logo: "/logo/logo-uqam.jpg"
           date: "2022 - 2023"
           content: |-
-            Extracurricular Activities
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        - title: "Classe préparatoire MPSI/PSI"
+            University of Quebec in Montreal (UQAM).
+            Program:
+              - Software Engineering Analysis and Modeling
+              - Use and Administration of Computer Systems
+              - Organization, Management, and Information Systems
+        - title: "Preparatory Class MPSI/PSI (Mathematics, Physics, and Engineering Science)"
           school:
-            name: "Cycle Préparatoire Associées ISEP-Stanislas"
+            name: "Preparatory Cycle Associated with ISEP-Stanislas"
             url: "https://www.isep.fr/classes-preparatoires-associees-2-3/"
           date: "2018 - 2020"
           content: |-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a orci massa. Aenean et ipsum non libero tristique vehicula eget et nisl. Ut eget mauris efficitur, tempor ex quis, tempus magna. Donec sed mauris quam. Quisque nec ante ac arcu suscipit commodo. Proin tempus malesuada augue, eget rhoncus tortor congue at. Vestibulum vel dignissim lorem. Vivamus luctus at arcu suscipit dapibus. Nam ligula leo, semper quis dolor ultricies, auctor tempus nisi. Ut posuere turpis nec metus efficitur, posuere tempor dui semper. Cras hendrerit urna sit amet gravida facilisis. Suspendisse mollis sed sem vitae porta.
-            - Projet TIPE de 2e année : Modélisation de ski nautique avec Arduino
-            - Projet TIPE de 1er année : Étude et modélisation du problème du sac à dos en Python
-            Extracurricular Activities
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-          featuredLink:
-            enable: true
-            name: "My academic record"
-            url: "https://example.com"
-        - title: "Baccalauréat Scientifique"
+            Programs MPSI then PSI:
+            - Second-year TIPE Project: Modeling of water skiing with Arduino
+            - First-year TIPE Project: Study and modeling of the knapsack problem in Python
+
+        - title: "High School Scientific Baccalaureate"
           school:
-            name: "Lycée Bossuet Notre-Dame"
+            name: "Bossuet Notre-Dame High School"
             url: "https://www.bossuetnotredame.org/lycee-bossuet-notre-dame/"
+            logo: "/logo/logo-bnd.png"
           date: "2018"
           content: |-
-            - Mention Bien
-            - Spécialité Mathématiques
-          featuredLink:
-            enable: true
-            url: "https://example.com"
+            - Honors: Mention Bien (Good)
+            - Specialization: Mathematics
     
     footer:
       socialNetworks:
@@ -486,9 +543,9 @@ languages:
     hero:
       enable: true
       intro: "你好， 我是"
-      title: "Hugo."
-      subtitle: "技术工程师"
-      content: "Passionné par la tech. Toujours à la quête des nouvelles technologies pour développer des projets."
+      title: "Hugo (雨果)."
+      subtitle: "数字工程师"
+      content: "热爱科技。始终寻找新技术以开发项目。"
       image: /images/Photo.jpg
       bottomImage:
         enable: true
@@ -509,18 +566,18 @@ languages:
           - icon: /favicon.ico
             url: "https://example.com"
         
-    # About
+    # About CN
     about:
       enable: true
       title: "关于我"
       image: "/images/Photo.jpg"
       content: |-
-        Je suis ingénieur du numérique. Actuellement, je travaille en tant qu'ingénieur logiciel au sein de [Sopra Steria](https://www.soprasteria.com/fr) à Paris. 
-
-        J'interviens au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr).
+        我是一名数字工程师。目前, 我在巴黎的[Sopra Steria](https://www.soprasteria.com/home)担任软件工程师。
+        
+        我在法国农业信贷公司企业与投资银行工作 ([Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.com/en))。
       skills:
         enable: true
-        title: "Quelques technologies que j'ai pu utiliser :"
+        title: "我使用过的一些技术 :"
         items:
           - "HTML"
           - "CSS"
@@ -532,112 +589,119 @@ languages:
           - "Typescript"
           - "[Selenium Webdriver](https://www.selenium.dev/)"
     
-    # Experience
+    # Experience CN
     experience:
       enable: true
       title: "经验"
       items:
-        - job: "Ingénieur logiciel - Junior"
+        - job: "初级软件工程师"
           company: "Sopra Steria"
-          companyUrl: "https://www.soprasteria.com/fr"
-          date: "Septembre 2023 - Présent"
+          companyUrl: "https://www.soprasteria.com/home"
+          date: "2023年9月 - 至今"
           featuredLink:
             enable: true
             url: "https://example.com"
           info:
             enable: false
           content: |
-            À la suite de mon stage de fin d'étude, j'ai eu l'opportunité de continuer mon aventure au sein de [Sopra Steria](https://www.soprasteria.com/fr) et continuer ma mission au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
+            在完成毕业实习后, 我有机会继续在[Sopra Steria](https://www.soprasteria.com/home)的工作, 并继续在法国农业信贷公司企业与投资银行的任务 ([Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.com/en))。
 
-            - Réalisation de dossiers de conception
-            - Mise en place d'architecture
-            - Développement en Java/Angular
-            - Réalisation et automatisation des tests unitaires
+            - 编写设计文档
+            - 架构实现
+            - 使用Java/Angular进行开发
+            - 单元测试的创建和自动化
 
-        - job: "Stage de fin d'étude en développement informatique"
+        - job: "软件开发毕业实习"
           company: "Sopra Steria"
-          companyUrl: "https://www.soprasteria.com/fr"
-          date: "Avril 2023 - Septembre 2023"
+          companyUrl: "https://www.soprasteria.com/home"
+          date: "2023年4月 - 2023年9月"
           featuredLink:
             enable: true
             url: "https://example.com"
           info:
             enable: false
           content: |
-            En tant que stagiaire de la division Banque de [Sopra Steria](https://www.soprasteria.com/fr), j'ai pu intervenir en tant que prestataire au sein de [Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.fr/fr)
+            作为[Sopra Steria](https://www.soprasteria.com/home)银行部门的实习生, 我有机会在法国农业信贷公司企业与投资银行担任顾问 ([Crédit Agricole Corporate & Investment Bank](https://www.ca-cib.com/en))。
 
-            - Réalisation de dossiers de conception
-            - Mise en place d'architecture
-            - Développement en Java/Angular
-            - Réalisation et automatisation des tests unitaires
+            - 编写设计文档
+            - 架构实现
+            - 使用Java/Angular进行开发
+            - 单元测试的创建和自动化
 
-        - job: "Stage en développement et analyse de données"
+        - job: "开发与数据分析实习"
           company: "FARECO - FAYAT"
-          companyUrl: "https://fareco.fayat.com"
-          date: "Septembre 2021 - Février 2022"
+          companyUrl: "https://fareco.fayat.com/en"
+          date: "2021年9月 - 2022年2月"
           info:
             enable: false
           featuredLink:
             enable: true
             url: "https://example.com"
           content: |
-            Stagiaire en simulation du traffic routier : 
-            - Amélioration d'outil de test pour l'étude des technologies V2X avec Python et le simulateur [SUMO](https://sumo.dlr.de/docs/index.html)
+            道路交通模拟实习生：
+            - 使用Python和[SUMO](https://sumo.dlr.de/docs/index.html)模拟器改进V2X技术研究的测试工具
 
-    # Education
+    # Education CN
     education:
       enable: true
       title: "教育"
       index: false
       items:
-        - title: "工程师培训 - 专业 : 信息技术 和 计算机科学"
+        - title: "日本语言与文明大学文凭 (Diplôme Universitaire)"
           school:
-            name: "Institut Supérieur d'Électronique de Paris (ISEP)"
+            name: "Université Paris Cité - 巴黎西岱大学"
+            url: "https://u-paris.fr/en/"
+            logo: "/logo/logo-paris_cite.png"
+          date: "2023 - 2024"
+          content: |-
+            该课程是对日语的认真介绍，使学生达到“中级”水平。它包括对日本和东亚文明某些方面的介绍。
+        - title: "工程硕士，信息系统架构专业"
+          school:
+            name: "Institut Supérieur d'Électronique de Paris (ISEP) - 巴黎高等电子学院"
             url: "https://www.isep.fr/cycle-ingenieur/"
+            logo: "/logo/logo-isep.png"
           date: "2020 - 2023"
           content: |-
-            巴黎高等电子学院
-            法国数字技术类高等工程师学校
-            Extracurricular Activities
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+            巴黎高等电子学院是一所法国数字技术类高等工程师学校。
+
+            课程：
+              - 信息系统架构
+              - 企业与信息技术组织
+              - 软件工程
+              - 网络安全
+              - 数据库与大数据
+          featuredLink:
+              enable: true
+              name: "LABELLIS 证书"
+              url: "https://certificate.bcdiploma.com/check/6DF707C11DE4610BCFDC7092A741E7324EE0CBF0248A7EEC666955D68E4CA033STNXTjhLZ1NDY2FGRkdzTWRqZGFHby9xK1kzSm1wTUZnUEs2b1lpcStnd3htSmk0"
         - title: "国际交流学期"
           school:
-            name: "Université du Québec à Montréal (UQÀM)"
+            name: "Université du Québec à Montréal (UQÀM) - 蒙特利尔魁北克大学"
             url: "https://uqam.ca"
+            logo: "/logo/logo-uqam.jpg"
           date: "2022 - 2023"
           content: |-
-            蒙特利尔魁北克大学
-            Extracurricular Activities
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        - title: "Classe préparatoire MPSI/PSI"
+            课程：
+              - 软件工程分析与建模 
+              - 计算机系统的使用与管理
+              - 组织、管理与信息系统
+        - title: "MPSI/PSI预科班 (数学、物理与工程科学)"
           school:
             name: "Cycle Préparatoire Associées ISEP-Stanislas"
             url: "https://www.isep.fr/classes-preparatoires-associees-2-3/"
           date: "2018 - 2020"
           content: |-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a orci massa. Aenean et ipsum non libero tristique vehicula eget et nisl. Ut eget mauris efficitur, tempor ex quis, tempus magna. Donec sed mauris quam. Quisque nec ante ac arcu suscipit commodo. Proin tempus malesuada augue, eget rhoncus tortor congue at. Vestibulum vel dignissim lorem. Vivamus luctus at arcu suscipit dapibus. Nam ligula leo, semper quis dolor ultricies, auctor tempus nisi. Ut posuere turpis nec metus efficitur, posuere tempor dui semper. Cras hendrerit urna sit amet gravida facilisis. Suspendisse mollis sed sem vitae porta.
-            - Projet TIPE de 2e année : Modélisation de ski nautique avec Arduino
-            - Projet TIPE de 1er année : Étude et modélisation du problème du sac à dos en Python
-            Extracurricular Activities
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-          featuredLink:
-            enable: true
-            name: "My academic record"
-            url: "https://example.com"
-        - title: "科学学士学位"
+            - 二年级TIPE项目: 使用Arduino建模滑水
+            - 一年级TIPE项目: 用Python研究和建模背包问题
+            
+        - title: "高中毕业证书"
           school:
             name: "Bossuet Notre-Dame 高中"
             url: "https://www.bossuetnotredame.org/lycee-bossuet-notre-dame/"
+            logo: "/logo/logo-bnd.png"
           date: "2018"
           content: |-
-            - Mention Bien
-            - Spécialité Mathématiques
-          featuredLink:
-            enable: true
-            url: "https://example.com"
+            - 荣誉：良好
 
     footer:
         socialNetworks:
