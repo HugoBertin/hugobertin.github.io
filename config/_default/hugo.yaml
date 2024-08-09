@@ -40,6 +40,9 @@ languages:
       # - name: Projets
       #   url: /fr/#projects
       #   weight: 4
+      - name: Certification
+        url: /fr/#achievements
+        weight: 4
       - name: Blogs
         pageRef: /blogs
         weight: 5
@@ -257,6 +260,15 @@ languages:
     #       links:
     #         - icon: fab fa-github
     #           url: https://google.com
+    # Achievements FR
+    achievements:
+      enable: true
+      title: "Certification"
+      items:
+        - title: AWS Certified Cloud Practitioner
+          content: Délivrée par Amazon Web Services Training and Certification
+          url: https://www.credly.com/badges/519e18ae-dd6d-4f32-a693-36220202d7e8/public_url
+          image: /images/certification/aws-certified-cloud-practitioner.png
     
     footer:
       recentPosts:
@@ -308,6 +320,9 @@ languages:
       #   pageRef: /blogs
       #   weight: 4
       #Dropdown menu
+      - name: Certification
+        url: /en/#achievements
+        weight: 4
       - identifier: Languages
         title: Languages options
         name: 🇬🇧 ENG
@@ -493,6 +508,15 @@ languages:
           content: |-
             - Honors: Mention Bien (Good)
             - Specialization: Mathematics
+    # Achievements EN
+    achievements:
+      enable: true
+      title: "Certification"
+      items:
+        - title: AWS Certified Cloud Practitioner
+          content: Issued by Amazon Web Services Training and Certification
+          url: https://www.credly.com/badges/519e18ae-dd6d-4f32-a693-36220202d7e8/public_url
+          image: /images/certification/aws-certified-cloud-practitioner.png
     
     footer:
       socialNetworks:
@@ -515,6 +539,9 @@ languages:
       - name: 教育
         url: /cn/#education
         weight: 3
+      - name: 认证
+        url: /cn/#achievements
+        weight: 4
       # - name: Blogs
       #   pageRef: /blogs
       #   weight: 4
@@ -543,7 +570,7 @@ languages:
     hero:
       enable: true
       intro: "你好， 我是"
-      title: "Hugo (雨果)."
+      title: "Hugo (雨果)。"
       subtitle: "数字工程师"
       content: "热爱科技。始终寻找新技术以开发项目。"
       image: /images/Photo.jpg
@@ -702,6 +729,16 @@ languages:
           date: "2018"
           content: |-
             - 荣誉：良好
+
+    # Achievements CN
+    achievements:
+      enable: true
+      title: "认证"
+      items:
+        - title: AWS Certified Cloud Practitioner
+          content: 由亚马逊网络服务培训与认证部门颁发
+          url: https://www.credly.com/badges/519e18ae-dd6d-4f32-a693-36220202d7e8/public_url
+          image: /images/certification/aws-certified-cloud-practitioner.png
 
     footer:
         socialNetworks:
