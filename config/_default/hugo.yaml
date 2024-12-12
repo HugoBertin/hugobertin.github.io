@@ -1,6 +1,11 @@
 languageCode: fr-FR
 baseURL: "https://hugobertin.github.io"
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   favicon: "/favicon.ico"
   navbar:
@@ -11,7 +16,7 @@ params:
       # searchPlaceholder: "Ctrl + k pour chercher..."
       stickyNavBar:
         enable : true
-        showOnScrollUp : true
+        showOnScrollUp : false
       menus:
           disableAbout: true
           disableExperience: true
@@ -43,23 +48,26 @@ languages:
       - name: Certification
         url: /fr/#achievements
         weight: 4
-      - name: Blogs
-        pageRef: /blogs
-        weight: 5
+      # - name: Blogs
+      #   pageRef: /blogs
+      #   weight: 5
       #Dropdown menu
       - identifier: Languages
         title: Example dropdown menu
         name: 🇫🇷 FR
+        flagPicture: france.png
         weight: 6
       - identifier: Languages 1
         title: Click here to switch to English
         name: 🇬🇧 EN
+        flagPicture: united-kingdom.png
         url: /en
         parent: Languages
         weight: 1
       - identifier: Languages 2
         title: example dropdown 2
         name: 🇨🇳 中文
+        flagPicture: china.png
         url: /cn
         parent: Languages
         weight: 2
@@ -178,7 +186,7 @@ languages:
             name: "Université Paris Cité"
             url: "https://u-paris.fr/"
             logo: "/logo/logo-paris_cite.png"
-          date: "2023 - 2024"
+          date: "2023 - 2025"
           content: |-
             Cette formation est une initiation sérieuse à la langue japonaise, permettant d'accéder à un niveau "intermédiaire". Elle comprend une introduction à quelques aspects de la civilisation du Japon et de l'Asie orientale. 
         - title: "Master d'ingénieur Spécialité Architecte des Systèmes d'Information"
@@ -271,12 +279,12 @@ languages:
           image: /images/certification/aws-certified-cloud-practitioner.png
     
     footer:
-      recentPosts:
-        path: "blogs"
-        count: 3
-        title: Posts récents
-        enable: true
-        disableFeaturedImage: false
+      # recentPosts:
+      #   path: "blogs"
+      #   count: 3
+      #   title: Posts récents
+      #   enable: true
+      #   disableFeaturedImage: false
       socialNetworks:
         github: https://github.com/HugoBertin
         linkedin: https://www.linkedin.com/in/hugo-bertin-6160031b8/
@@ -455,7 +463,7 @@ languages:
             name: "Université Paris Cité"
             url: "https://u-paris.fr/en/"
             logo: "/logo/logo-paris_cite.png"
-          date: "2023 - 2024"
+          date: "2023 - 2025"
           content: |-
             This program is a serious introduction to the Japanese language, allowing students to reach an "intermediate" level. It includes an introduction to some aspects of the civilization of Japan and East Asia.
         
@@ -679,7 +687,7 @@ languages:
             name: "Université Paris Cité - 巴黎西岱大学"
             url: "https://u-paris.fr/en/"
             logo: "/logo/logo-paris_cite.png"
-          date: "2023 - 2024"
+          date: "2023 - 2025"
           content: |-
             该课程是对日语的认真介绍，使学生达到“中级”水平。它包括对日本和东亚文明某些方面的介绍。
         - title: "工程硕士，信息系统架构专业"
@@ -758,18 +766,18 @@ languages:
       content: "min de lecture"
 
 # For translations
-  terms:
-    read: "Lire"
-    toc: "Sommaire"
-    copyright: "All rights reserved"
-    pageNotFound: "Page not found"
-    emailText: "Check out this site"
-    readingTime: "de lecture"
+  # terms:
+  #   read: "Lire"
+  #   toc: "Sommaire1"
+  #   copyright: "All rights reserved"
+  #   pageNotFound: "Page not found"
+  #   emailText: "Check out this site"
+  #   readingTime: "de lecture"
 
-  datesFormat:
-    article: ":date_long"
-    articleList: ":date_long"
-    articleRecent: ":date_long"
+  # datesFormat:
+  #   article: ":date_long"
+  #   articleList: ":date_long"
+  #   articleRecent: ":date_long"
 
 # Menus:
 #   main:

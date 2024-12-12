@@ -1,6 +1,7 @@
 {{ if .Site.Params.education.enable | default false }}
-<section id="education" class="py-5">
+<section id="education" class="py-4">
     <div class="container">
+        <span class="row py-5"></span>
         <h3 class="text-center">{{ .Site.Params.education.title | default "Education" }}</h3>
         <div class="row justify-content-center py-5">
             {{ $indexMenu := .Site.Params.education.index }}
@@ -21,26 +22,29 @@
                         <div class="card">
                             <div class="card-body">
                                 
-                                {{ if .school.logo }}
-                                <div class="logo-holder"> 
-                                    <img src="{{ .school.logo }}" class="company-logo" alt="">
-                                </div>
-                                {{ end }}
+                                
 
                                 <div class="float-end">
-                                    <small>{{ .date }}</small>
-                                </div>
+                                    {{ if .school.logo }}
+                                    <div class="logo-holder"> 
+                                        <img src="{{ .school.logo }}" class="company-logo" alt="">
+                                    </div>
+                                    {{ end }}
+                                </div>  
                                 <h5 class="card-title">{{ .title }}</h5>
                                 
                                 {{ if .school.url }}
                                 <a href="{{ .school.url }}" target="_blank">
                                     <h6>
                                     {{ .school.name }}
-                                    </h6>
-                                </a>
+                                    </h6></a>
                                 {{ else }}
                                 {{ .school.name }}
                                 {{ end }}
+
+                                <div class="mt-0 mb-3" style="opacity: 0.8;">
+                                    <small>{{ .date }}</small>
+                                </div>
 
                                 {{ if .GPA }}
                                 <div class="py-1">

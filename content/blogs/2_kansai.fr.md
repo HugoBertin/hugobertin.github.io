@@ -1,6 +1,6 @@
 ---
 title: "Kansai : Exister dans l'ombre de Tokyo"
-date: '2024-12-09'
+date: '2024-12-10'
 author: 'Hugo Bertin'
 tags:
   - Japon
@@ -23,6 +23,7 @@ Historiquement, le Kansai a été le centre du pouvoir impérial, surtout à l'�
 ![test](/images/posts/2_kansai/Fushimi_Inari_Taisha_Kyoto_Japan.jpg "Titre")
 $$ \text{image : } $$
 
+{{< figure src="/images/posts/5G.png" attr="An elephant at sunset" >}}
 
 ## Source
 

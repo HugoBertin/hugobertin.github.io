@@ -1,7 +1,7 @@
 
 /* Default font for body */
 body {
-    font-family: "Lora", Georgia, serif !important;
+    font-family: "Alata", "Lora", Georgia, serif !important;
 }
 
 /* secondary font */
@@ -19,9 +19,9 @@ body {
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
-/* .dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
     display: block;
-} */
+}
 
   
 .logo-holder {
