@@ -16,8 +16,6 @@ La région du Kansai 関西, également appelée Kinki 近畿, occupe une place 
 
 {{< figure src="/images/posts/2_kansai/Kansai_carte_national.png" attr="Fig : Carte Kansai" >}}
 
-### Histoire
-
 ## 1. Une région au cœur de l’histoire et de l’identité japonaise 
 
 ## 2. Dynamiques économiques et modernisation du Kansai
@@ -43,3 +41,7 @@ La région du Kansai 関西, également appelée Kinki 近畿, occupe une place 
 [Changement identitaire et revendications régionalistes du Kansaï au Japon, Sachiyo KANZAKI](https://papyrus.bib.umontreal.ca/xmlui/handle/1866/10357)
 
 [Concentration unipolaire à Tokyo et l’émergence du discours régionaliste du Kansaï, Sachiyo KANZAKI](http://ffj.ehess.fr/index/article/335/concentration-unipolaire-a-tokyo-et-l-emergence-du-discours-regionaliste-du-kansai.html)
+
+[Kobe - Port City, Kobe Convention Bureau](https://kobe-convention.jp/en/why-kobe/port-city/)
+
+[Crude Kansai and Uptight Tokyo; Where do Japan’s regional stereotypes come from?](https://blog.gaijinpot.com/japanese-regional-stereotypes/)
