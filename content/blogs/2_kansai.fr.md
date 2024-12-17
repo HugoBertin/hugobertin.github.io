@@ -7,25 +7,34 @@ tags:
   - Kansai
   - Géographie
   - DU Paris Cité
-image: /images/posts/2_kansai/Fushimi_Inari_Taisha_Kyoto_Japan.jpg
+image: /images/posts/2_kansai/Kansai-presentation.png
 mathjax: true
 ---
 ## Introduction
 
-La région du Kansai, située dans le sud-ouest de l'île principale de Honshu, est l'une des régions les plus importantes du Japon sur les plans historique, culturel et économique. Elle englobe plusieurs préfectures clés, dont Osaka, Kyoto, Nara, Hyogo, Wakayama et Shiga, et abrite une population de près de 23 millions d'habitants. Le Kansai, souvent considéré comme le "coeur historique" du Japon, a joué un rôle central dans le développement de la culture, de la politique et de l'économie japonaise depuis des siècles.
+La région du Kansai 関西, également appelée Kinki 近畿, occupe une place centrale dans le paysage géographique, historique et économique du Japon. Située dans le sud-ouest de l’île principale de Honshū, elle regroupe sept préfectures majeures : Osaka, Kyoto, Hyōgo (Kobe), Nara, Shiga, Wakayama et Mie. Avec une population d'environ 22 millions d’habitants, elle constitue la deuxième région la plus peuplée du Japon après le Kanto (Tokyo). Si elle était un pays, le Kansai se classerait parmi les 30 premières économies mondiales, avec un Produit Intérieur Brut (PIB) estimé à 841 milliards de dollars, comparable à celui de pays comme Afrique du Sud ou l’Argentine.
 
-Historiquement, le Kansai a été le centre du pouvoir impérial, surtout à l'époque où Kyoto était la capitale (de 794 à 1868), une période marquée par un foisonnement artistique et intellectuel. Les temples bouddhistes et sanctuaires shinto tels que ceux de Nara et Kyoto, inscrits au patrimoine mondial de l'UNESCO, témoignent de cette richesse culturelle unique.
+{{< figure src="/images/posts/2_kansai/Kansai_carte_national.png" attr="Fig : Carte Kansai" >}}
 
 ### Histoire
 
-## 1. Concentration 
+## 1. Une région au cœur de l’histoire et de l’identité japonaise 
 
-![test](/images/posts/2_kansai/Fushimi_Inari_Taisha_Kyoto_Japan.jpg "Titre")
-$$ \text{image : } $$
+## 2. Dynamiques économiques et modernisation du Kansai
 
-{{< figure src="/images/posts/5G.png" attr="An elephant at sunset" >}}
+## 3. Urbanisation et réseaux de transport dans le Kansai
+
+## 4. Industries culturelles et développement économique
+
+## Conclusion
 
 ## Source
+
+[La région du Kansai (Kinki), MINISTÈRE DE L'ÉCONOMIE, DES FINANCES ET DE L'INDUSTRIE](https://www.tresor.economie.gouv.fr/Articles/2018/03/22/la-region-du-kansai-kinki)
+
+[City Population Data - Japan](https://www.citypopulation.de/en/japan/)
+
+[The Large Kansai Economy, Kansai Bureau of Economy,Trade and Industry (METI Kansai)](https://www.kansai.meti.go.jp/3-1toukou/_INVEST_support_eng/2024invest_eng/2_kansai_keizai_e.pdf)
 
 [La décentralisation de Tokyo revient dans le débat, Christian Kessler](https://www.larevuedesressources.org/la-decentralisation-de-tokyo-revient-dans-le-debat.html?utm_source=chatgpt.com)
 

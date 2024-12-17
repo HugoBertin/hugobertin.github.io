@@ -295,7 +295,7 @@ languages:
     # Pour les posts, blogs
     singlePages:
       readTime:
-        content: "min de lecture"
+        content: " min de lecture"
 
     terms:
       read: "Lire"
