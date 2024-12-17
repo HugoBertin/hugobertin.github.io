@@ -34,14 +34,16 @@ La région du Kansai 関西, également appelée Kinki 近畿, occupe une place 
 
 [The Large Kansai Economy, Kansai Bureau of Economy,Trade and Industry (METI Kansai)](https://www.kansai.meti.go.jp/3-1toukou/_INVEST_support_eng/2024invest_eng/2_kansai_keizai_e.pdf)
 
-[La décentralisation de Tokyo revient dans le débat, Christian Kessler](https://www.larevuedesressources.org/la-decentralisation-de-tokyo-revient-dans-le-debat.html?utm_source=chatgpt.com)
+[La décentralisation de Tokyo revient dans le débat, Christian Kessler](https://www.larevuedesressources.org/la-decentralisation-de-tokyo-revient-dans-le-debat.html)
 
-[Decentralizing from Tokyo-centricity: The Growth of the Kansai Ecosystem, Crunchbase](https://about.crunchbase.com/blog/decentralizing-tokyo-growth-of-kansai-ecosystem/?utm_source=chatgpt.com)
+[Decentralizing from Tokyo-centricity: The Growth of the Kansai Ecosystem, Crunchbase](https://about.crunchbase.com/blog/decentralizing-tokyo-growth-of-kansai-ecosystem/)
 
 [Changement identitaire et revendications régionalistes du Kansaï au Japon, Sachiyo KANZAKI](https://papyrus.bib.umontreal.ca/xmlui/handle/1866/10357)
 
 [Concentration unipolaire à Tokyo et l’émergence du discours régionaliste du Kansaï, Sachiyo KANZAKI](http://ffj.ehess.fr/index/article/335/concentration-unipolaire-a-tokyo-et-l-emergence-du-discours-regionaliste-du-kansai.html)
 
 [Kobe - Port City, Kobe Convention Bureau](https://kobe-convention.jp/en/why-kobe/port-city/)
+
+[Japan Tourism Statistics](https://statistics.jnto.go.jp/en/)
 
 [Crude Kansai and Uptight Tokyo; Where do Japan’s regional stereotypes come from?](https://blog.gaijinpot.com/japanese-regional-stereotypes/)
