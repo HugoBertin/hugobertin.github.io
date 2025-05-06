@@ -51,9 +51,11 @@ languages:
       # - name: Blogs
       #   pageRef: /blogs
       #   weight: 5
-      #Dropdown menu
+
+      #Language Dropdown menu
+      language:
       - identifier: Languages
-        title: Example dropdown menu
+        title: Option de langue
         name: 🇫🇷 FR
         flagPicture: france.png
         weight: 6
@@ -65,7 +67,7 @@ languages:
         parent: Languages
         weight: 1
       - identifier: Languages 2
-        title: example dropdown 2
+        title: 点击此处切换为中文
         name: 🇨🇳 中文
         flagPicture: china.png
         url: /cn
@@ -327,10 +329,12 @@ languages:
       # - name: Blogs
       #   pageRef: /blogs
       #   weight: 4
-      #Dropdown menu
       - name: Certification
         url: /en/#achievements
         weight: 4
+
+      #Language Dropdown menu
+      language:
       - identifier: Languages
         title: Languages options
         name: 🇬🇧 ENG
@@ -342,7 +346,7 @@ languages:
         parent: Languages
         weight: 1
       - identifier: Languages 2
-        title: example dropdown 2
+        title: 点击此处切换为中文
         name: 🇨🇳 中文
         url: /cn
         parent: Languages
@@ -553,9 +557,11 @@ languages:
       # - name: Blogs
       #   pageRef: /blogs
       #   weight: 4
-      #Dropdown menu
+
+      #Language Dropdown menu
+      language:
       - identifier: Languages
-        title: Example dropdown menu
+        title: 语言选项
         name: 🇨🇳 中文
         weight: 5
       - identifier: Languages 1
