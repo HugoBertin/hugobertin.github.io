@@ -1,4 +1,4 @@
-{{ if .Site.Params.experience.enable | default false }}
+<!-- {{ if .Site.Params.experience.enable | default false }}
 <section id="experience" class="py-5">
     <div class="container">
         <span class="row py-4"></span>
@@ -126,6 +126,102 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+{{ end }} -->
+
+<!-- {{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="py-5">
+    <div class="timeline">
+        <span class="row py-4"></span>
+        <h3 class="text-center">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+        {{ range $index, $element := .Site.Params.experience.items }}
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2 {{ if modBool $index 2 }}left{{ else }}right{{ end }}">
+                    <div class="content">
+                        <div class="pb-1">                
+                            <small>{{ .date }}</small>
+                        </div>
+                        <span class="h4">{{ .job }}</span>
+                        <small>-</small>
+                        <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
+                        <div class="pb-1">
+                            
+                            <div class="pt-2">
+                                {{ .content | markdownify}}
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        {{ end }}
+
+    </div>
+</section>
+{{ end }} -->
+
+
+{{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="py-5">
+    <div class="container">
+        <span class="row py-4"></span>
+        <h3 class="text-center py-5">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+        <div class="timeline py-5">
+            {{ range $index, $element := .Site.Params.experience.items }}
+            <div class="experience-container {{ if modBool $index 2 }}left{{ else }}right{{ end }}">
+                <div class="experience-content">
+                    
+                    <div class="tab-content pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}'
+                            aria-labelledby='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}-tab'
+                        >
+                            <div>
+                                {{ if .companyLogo }}
+                                <div class="pb-1 logo-holder"> 
+                                    <img src="{{ .companyLogo }}" class="company-logo" alt="">
+                                </div>
+                                {{ end }}
+                                
+                                <h5 class="pb-1" style="opacity: 0.7;">
+                                    {{ .date }}
+                                </h5>
+                                
+                                
+                                <span class="h4">{{ .job }}</span>
+                                <small>-</small>
+                                <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
+                                
+                                <hr>
+                                
+                                {{ if .featuredLink.enable | default false }}
+                                <div class="py-2 featuredLink">
+                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink.url | default "#" }} target="_blank">
+                                        {{ .featuredLink.name | default "Featured Link" }} 
+                                    </a>
+                                </div>
+                                {{ end }}
+                            </div>
+
+                            {{ .content | markdownify}}
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+        </div>
+        
     </div>
 </section>
 {{ end }}

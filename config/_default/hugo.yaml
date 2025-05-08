@@ -131,10 +131,11 @@ languages:
       items:
         - job: "Ingénieur logiciel - Junior"
           company: "Sopra Steria"
+          companyLogo: "/logo/logo-sopra_steria.png"
           companyUrl: "https://www.soprasteria.com/fr"
           date: "Septembre 2023 - Présent"
           featuredLink:
-            enable: true
+            enable: false
             name: "test"
             url: "https://example.com"
           info:
@@ -149,10 +150,11 @@ languages:
 
         - job: "Stage de fin d'étude en développement informatique"
           company: "Sopra Steria"
+          companyLogo: "/logo/logo-sopra_steria.png"
           companyUrl: "https://www.soprasteria.com/fr"
           date: "Avril 2023 - Septembre 2023"
           featuredLink:
-            enable: true
+            enable: false
             url: "https://example.com"
           info:
             enable: false
@@ -166,12 +168,13 @@ languages:
 
         - job: "Stage en développement et analyse de données"
           company: "FARECO - FAYAT"
+          companyLogo: "/logo/logo-fareco.png"
           companyUrl: "https://fareco.fayat.com"
           date: "Septembre 2021 - Février 2022"
           info:
             enable: false
           featuredLink:
-            enable: true
+            enable: false
             url: "https://example.com"
           content: |
             Stagiaire en simulation du traffic routier : 
@@ -412,10 +415,11 @@ languages:
       items:
         - job: "Junior Software Engineer"
           company: "Sopra Steria"
+          companyLogo: "/logo/logo-sopra_steria.png"
           companyUrl: "https://www.soprasteria.com/home"
           date: "September 2023 - Present"
           featuredLink:
-            enable: true
+            enable: false
             url: "https://example.com"
           info:
             enable: false
@@ -429,10 +433,11 @@ languages:
 
         - job: "End-of-study internship in software development"
           company: "Sopra Steria"
+          companyLogo: "/logo/logo-sopra_steria.png"
           companyUrl: "https://www.soprasteria.com/home"
           date: "April 2023 - September 2023"
           featuredLink:
-            enable: true
+            enable: false
             url: "https://example.com"
           info:
             enable: false
@@ -445,12 +450,13 @@ languages:
 
         - job: "Internship in Development and Data Analysis"
           company: "FARECO - FAYAT"
+          companyLogo: "/logo/logo-fareco.png"
           companyUrl: "https://fareco.fayat.com/en"
           date: "September 2021 - February 2022"
           info:
             enable: false
           featuredLink:
-            enable: true
+            enable: false
             url: "https://example.com"
           content: |
             Intern in Road Traffic Simulation:
@@ -637,10 +643,11 @@ languages:
       items:
         - job: "初级软件工程师"
           company: "Sopra Steria"
+          companyLogo: "/logo/logo-sopra_steria.png"
           companyUrl: "https://www.soprasteria.com/home"
           date: "2023年9月 - 至今"
           featuredLink:
-            enable: true
+            enable: false
             url: "https://example.com"
           info:
             enable: false
@@ -654,10 +661,11 @@ languages:
 
         - job: "软件开发毕业实习"
           company: "Sopra Steria"
+          companyLogo: "/logo/logo-sopra_steria.png"
           companyUrl: "https://www.soprasteria.com/home"
           date: "2023年4月 - 2023年9月"
           featuredLink:
-            enable: true
+            enable: false
             url: "https://example.com"
           info:
             enable: false
@@ -671,12 +679,13 @@ languages:
 
         - job: "开发与数据分析实习"
           company: "FARECO - FAYAT"
+          companyLogo: "/logo/logo-fareco.png"
           companyUrl: "https://fareco.fayat.com/en"
           date: "2021年9月 - 2022年2月"
           info:
             enable: false
           featuredLink:
-            enable: true
+            enable: false
             url: "https://example.com"
           content: |
             道路交通模拟实习生：
