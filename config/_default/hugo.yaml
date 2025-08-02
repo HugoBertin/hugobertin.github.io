@@ -56,20 +56,23 @@ languages:
       language:
       - identifier: Languages
         title: Option de langue
-        name: 🇫🇷 FR
-        flagPicture: france.png
+        name: FR
+        params:
+          flagPicture: /flag/france.png
         weight: 6
       - identifier: Languages 1
         title: Click here to switch to English
-        name: 🇬🇧 EN
-        flagPicture: united-kingdom.png
+        name: EN
+        params:
+          flagPicture: /flag/united-kingdom.png
         url: /en
         parent: Languages
         weight: 1
       - identifier: Languages 2
         title: 点击此处切换为中文
-        name: 🇨🇳 中文
-        flagPicture: china.png
+        name: 中文
+        params:
+          flagPicture: /flag/china.png
         url: /cn
         parent: Languages
         weight: 2
@@ -340,20 +343,26 @@ languages:
       language:
       - identifier: Languages
         title: Languages options
-        name: 🇬🇧 ENG
+        name: ENG
         weight: 5
+        params:
+          flagPicture: /flag/united-kingdom.png
       - identifier: Languages 1
         title: Cliquer ici pour changer en français
-        name: 🇫🇷 FR
+        name: FR
         url: /fr
         parent: Languages
         weight: 1
+        params:
+          flagPicture: /flag/france.png
       - identifier: Languages 2
         title: 点击此处切换为中文
-        name: 🇨🇳 中文
+        name: 中文
         url: /cn
         parent: Languages
         weight: 2
+        params:
+          flagPicture: /flag/china.png
     
     Title: Hugo Bertin EN
     slug: project
@@ -568,20 +577,26 @@ languages:
       language:
       - identifier: Languages
         title: 语言选项
-        name: 🇨🇳 中文
+        name: 中文
         weight: 5
+        params:
+          flagPicture: /flag/china.png
       - identifier: Languages 1
         title: Cliquer ici pour changer en français
-        name: 🇫🇷 FR
+        name: FR
         url: /fr
         parent: Languages
         weight: 1
+        params:
+          flagPicture: /flag/france.png
       - identifier: Languages 2
         title: Click here to switch to English
-        name: 🇬🇧 ENG
+        name: ENG
         url: /en
         parent: Languages
         weight: 2
+        params:
+          flagPicture: /flag/united-kingdom.png
     
     Title: Hugo Bertin 中文
     slug: project
