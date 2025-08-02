@@ -193,6 +193,15 @@ header .navbar.animate {
     width: 100%;
 }
 
+@media (min-width:1000px) {
+    #hero .principal {
+        position: absolute; 
+        top: 40%; 
+        left: 50%; 
+        transform: translate(-50%,-40%);
+    }
+}
+
 
 
 /* about me */
