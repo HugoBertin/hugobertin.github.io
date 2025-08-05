@@ -18,6 +18,23 @@
     }
 </script>
 
+<!-- Close offcanvas menu when click -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const offcanvasElement = document.getElementById('offcanvasNavbar');
+    const offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+
+    const menuLinks = offcanvasElement.querySelectorAll('a.nav-link');
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        offcanvasInstance.hide(); 
+      });
+    });
+  });
+</script>
+
+
 <!-- Show header on scroll up -->
 {{ if .Site.Params.navbar.stickyNavBar.enable | default false }}
 {{ $showNavBarOnScrollUp := .Site.Params.navbar.stickyNavBar.showOnScrollUp | default false }}
