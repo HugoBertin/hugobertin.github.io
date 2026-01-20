@@ -96,3 +96,43 @@
         background-color: var(--background-color);
     }
 </style>
+
+<!-- Gestion langue sur la page d'accueil -->
+{{ if .IsHome }}
+<script>
+    (function() {
+        // Protection contre boucle infinie
+        if (sessionStorage.getItem("lang_redirected")) {
+            return;
+        }
+
+        // Détection
+        var userLang = navigator.language || navigator.userLanguage; 
+        userLang = userLang.substring(0, 2).toLowerCase();
+        
+        // Détermination de la cible
+        var target = '/en/'; // Par défaut (fallback)
+
+        if (userLang === 'fr') {
+            target = '/fr/';
+        } else if (userLang === 'zh' || userLang === 'cn') {
+            target = '/cn/';
+        }
+
+        // Vérification de l'URL actuelle
+        var currentPath = window.location.pathname;
+        
+        // Petite sécurité pour la racine stricte "/"
+        if (currentPath === "/" && target !== "/") {
+        } else if (currentPath.indexOf(target) === 0) {
+            sessionStorage.setItem("lang_redirected", "true");
+            return; 
+        }
+
+        // Exécution de la redirection
+        sessionStorage.setItem("lang_redirected", "true");
+        window.location.replace(target);
+
+    })();
+</script>
+{{ end }}

@@ -1,4 +1,4 @@
-languageCode: fr-FR
+languageCode: en
 baseURL: "https://hugobertin.github.io"
 
 markup:
@@ -24,10 +24,10 @@ params:
           disableProjects: true
           disableAchievements: true
           disableContact: true
-  
-#Languages FR
-defaultContentLanguage: "fr"
+
+defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: true
+#Languages FR
 languages:
   fr:
     languageName: Français
