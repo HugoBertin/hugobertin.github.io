@@ -7,11 +7,6 @@
   </sitemap>
   
   <sitemap>
-    <loc>https://hugobertin.github.io/datesformat/sitemap.xml</loc>
-    
-  </sitemap>
-  
-  <sitemap>
     <loc>https://hugobertin.github.io/en/sitemap.xml</loc>
     
   </sitemap>
@@ -19,17 +14,12 @@
   <sitemap>
     <loc>https://hugobertin.github.io/fr/sitemap.xml</loc>
     
-      <lastmod>2020-11-24T00:00:00+00:00</lastmod>
+      <lastmod>2024-12-10T00:00:00+00:00</lastmod>
     
   </sitemap>
   
   <sitemap>
     <loc>https://hugobertin.github.io/singlepages/sitemap.xml</loc>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>https://hugobertin.github.io/terms/sitemap.xml</loc>
     
   </sitemap>
   

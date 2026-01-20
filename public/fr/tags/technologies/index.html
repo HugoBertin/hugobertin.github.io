@@ -57,11 +57,11 @@
         --secondary-color: #f8f9fa;
 
          
-        --text-color-dark: #e4e6eb;
+        --text-color-dark: #ffffff;
         --text-secondary-color-dark: #b0b3b8;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
-        --primary-color-dark: #ffffff;
+        --primary-color-dark: #48acfc;
         --secondary-color-dark: #212529;
     }
     body {
@@ -131,6 +131,23 @@ Technologies | Hugo Bertin
 </script>
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const offcanvasElement = document.getElementById('offcanvasNavbar');
+    const offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+
+    const menuLinks = offcanvasElement.querySelectorAll('a.nav-link');
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        offcanvasInstance.hide(); 
+      });
+    });
+  });
+</script>
+
+
+
 
 
 <script>
@@ -139,7 +156,7 @@ Technologies | Hugo Bertin
         let profileHeaderElem = document.getElementById("profileHeader");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
-        let showNavBarOnScrollUp =  true ;
+        let showNavBarOnScrollUp =  false ;
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -161,8 +178,17 @@ Technologies | Hugo Bertin
 <header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg ">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+
             
-            <a class="navbar-brand primary-font text-wrap" href="/">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <a class="navbar-brand primary-font text-wrap" href="https://hugobertin.github.iofr">
                 
                 <img src="/favicon.ico" width="30" height="30"
                     class="d-inline-block align-top">
@@ -171,125 +197,139 @@ Technologies | Hugo Bertin
             </a>
 
             
-
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
-                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
-                </svg>
-            </button>
-
             
-            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
-                <ul class="navbar-nav ms-auto text-center">
+            <div class="primary-font dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Option de langue">
+                    <img src="/flag/france.png" width="25" height="17" class="dropdown-menu-flag">
+                    FR
+                </a>
+                <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
                     
-
+                    <a class="dropdown-item text-center nav-link" href="/en"
+                        title="Click here to switch to English">
+                        <img src="/flag/united-kingdom.png" width="25" height="17" class="dropdown-menu-flag">
+                        EN
+                    </a>
                     
-
+                    <a class="dropdown-item text-center nav-link" href="/cn"
+                        title="点击此处切换为中文">
+                        <img src="/flag/china.png" width="25" height="17" class="dropdown-menu-flag">
+                        中文
+                    </a>
                     
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/fr/#about" title="">
-                            
-                            À propos
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/fr/#experience" title="">
-                            
-                            Expérience
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/fr/#education" title="">
-                            
-                            Formation
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/fr/blogs/" title="Blogs">
-                            
-                            Blogs
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Example dropdown menu">
-                            🇫🇷 FR
-                        </a>
-                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
-                            
-                            <a class="dropdown-item text-center nav-link" href="/en"
-                                title="Click here to switch to English">
-                                🇬🇧 EN
-                            </a>
-                            
-                            <a class="dropdown-item text-center nav-link" href="/cn"
-                                title="example dropdown 2">
-                                🇨🇳 中文
-                            </a>
-                            
-                        </div>
-                    </li>
-                    
-                    
-
-                    
-                    <li class="nav-item navbar-text">
-                        
-                        <div class="text-center">
-                            <button id="theme-toggle">
-                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                                </svg>
-                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"></circle>
-                                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    
-
-                </ul>
-
+                </div>
             </div>
+            
+            
+
+            
+
+            
+
+            
+            
+
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand primary-font text-wrap" href="https://hugobertin.github.iofr">
+                        
+                        <img src="/favicon.ico" width="30" height="30"
+                            class="d-inline-block align-top">
+                        Hugo Bertin
+                        
+                    </a>
+                    <button type="button" class="custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto text-center">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+                        
+                        
+                        
+                        <li class="nav-item navbar-text">
+                            <a class="nav-link" href="/fr/#about" title="">
+                                
+                                À propos
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li class="nav-item navbar-text">
+                            <a class="nav-link" href="/fr/#experience" title="">
+                                
+                                Expérience
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li class="nav-item navbar-text">
+                            <a class="nav-link" href="/fr/#education" title="">
+                                
+                                Formation
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li class="nav-item navbar-text">
+                            <a class="nav-link" href="/fr/#achievements" title="">
+                                
+                                Certification
+                            </a>
+                        </li>
+                        
+                        
+
+                        
+                        <li class="nav-item navbar-text" style="padding-top: 0.2rem;">
+                            
+                            <div class="text-center">
+                                <button id="theme-toggle">
+                                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                    </svg>
+                                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="5"></circle>
+                                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </nav>
 </header>
@@ -303,13 +343,13 @@ Technologies | Hugo Bertin
                 <div class="card h-100">
                     
                     <div class="card-header">
-                        <a href="/fr/blogs/1-5g/">
+                        <a href="/fr/blogs/1_5g/">
                             <img src="/images/posts/5G.png" class="card-img-top" alt="Info ou intox sur la 5G">
                         </a>
                     </div>
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/fr/blogs/1-5g/" class="primary-font card-title">
+                        <a href="/fr/blogs/1_5g/" class="primary-font card-title">
                             <h5 class="card-title bg-transparent" title="Info ou intox sur la 5G">Info ou intox sur la 5G</h5>
                         </a>
                         <div class="card-text secondary-font">
@@ -319,7 +359,7 @@ On a entendu dire que c’était …</p>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
                         <span class="float-start bg-transparent">24 novembre 2020</span>
-                        <a href="/fr/blogs/1-5g/" class="float-end btn btn-outline-info btn-sm">Lire</a>
+                        <a href="/fr/blogs/1_5g/" class="float-end btn btn-outline-info btn-sm">Lire</a>
                     </div>
                 </div>
             </div>
@@ -336,42 +376,6 @@ On a entendu dire que c’était …</p>
   </div><footer>
     
  
- 
-<div class="container py-3" id="recent-posts">
-    
-    
-    <div class="h3 text-center text-secondary py-3">
-        Posts récents
-    </div>
-    <div class="row justify-content-center">
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/fr/blogs/1-5g/">
-                        <img src="/images/posts/5G.png" class="card-img-top" alt="Info ou intox sur la 5G">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/fr/blogs/1-5g/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Info ou intox sur la 5G">Info ou intox sur la 5G</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Introduction Ah la 5G, on en a tous entendu parler que ce soit à la télé ou sur nos téléphones par les pubs des opérateurs ou de nos politiciens. La 5G pour ceux qui ne connaissent pas trop c’est la \( 5^{ème}\) génération de standards pour la téléphonie mobile.
-On a entendu dire que c’était …</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">24 novembre 2020</span>
-                    <a href="/fr/blogs/1-5g/" class="float-end btn btn-outline-info btn-sm">Lire</a>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</div>
 
 <div class="text-center pt-2">
     
@@ -429,7 +433,7 @@ On a entendu dire que c’était …</p>
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2024  All rights reserved
+            &copy; 2026  All rights reserved
             
         </div>
     </div>

@@ -5,11 +5,6 @@
     <loc>https://hugobertin.github.io/cn/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="datesformat"
-                href="https://hugobertin.github.io/datesformat/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="https://hugobertin.github.io/en/categories/"
                 />
@@ -25,11 +20,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="terms"
-                href="https://hugobertin.github.io/terms/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="cn"
                 href="https://hugobertin.github.io/cn/categories/"
                 />
@@ -42,18 +32,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="datesformat"
-                href="https://hugobertin.github.io/datesformat/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="singlepages"
                 href="https://hugobertin.github.io/singlepages/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="terms"
-                href="https://hugobertin.github.io/terms/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -74,11 +54,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="datesformat"
-                href="https://hugobertin.github.io/datesformat/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="https://hugobertin.github.io/en/tags/"
                 />
@@ -86,11 +61,6 @@
                 rel="alternate"
                 hreflang="singlepages"
                 href="https://hugobertin.github.io/singlepages/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="terms"
-                href="https://hugobertin.github.io/terms/tags/"
                 />
     <xhtml:link
                 rel="alternate"

@@ -58,11 +58,11 @@
         --secondary-color: #f8f9fa;
 
          
-        --text-color-dark: #e4e6eb;
+        --text-color-dark: #ffffff;
         --text-secondary-color-dark: #b0b3b8;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
-        --primary-color-dark: #ffffff;
+        --primary-color-dark: #48acfc;
         --secondary-color-dark: #212529;
     }
     body {
@@ -136,6 +136,23 @@ Hugo Bertin 中文
 </script>
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const offcanvasElement = document.getElementById('offcanvasNavbar');
+    const offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+
+    const menuLinks = offcanvasElement.querySelectorAll('a.nav-link');
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        offcanvasInstance.hide(); 
+      });
+    });
+  });
+</script>
+
+
+
 
 
 <script>
@@ -144,7 +161,7 @@ Hugo Bertin 中文
         let profileHeaderElem = document.getElementById("profileHeader");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
-        let showNavBarOnScrollUp =  true ;
+        let showNavBarOnScrollUp =  false ;
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -166,8 +183,17 @@ Hugo Bertin 中文
 <header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg ">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+
             
-            <a class="navbar-brand primary-font text-wrap" href="/">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <a class="navbar-brand primary-font text-wrap" href="https://hugobertin.github.iocn">
                 
                 <img src="/favicon.ico" width="30" height="30"
                     class="d-inline-block align-top">
@@ -176,128 +202,152 @@ Hugo Bertin 中文
             </a>
 
             
-
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
-                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
-                </svg>
-            </button>
-
             
-            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
-                <ul class="navbar-nav ms-auto text-center">
+            <div class="primary-font dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="语言选项">
+                    <img src="/flag/china.png" width="25" height="17" class="dropdown-menu-flag">
+                    中文
+                </a>
+                <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
                     
-
+                    <a class="dropdown-item text-center nav-link" href="/fr"
+                        title="Cliquer ici pour changer en français">
+                        <img src="/flag/france.png" width="25" height="17" class="dropdown-menu-flag">
+                        FR
+                    </a>
                     
-
+                    <a class="dropdown-item text-center nav-link" href="/en"
+                        title="Click here to switch to English">
+                        <img src="/flag/united-kingdom.png" width="25" height="17" class="dropdown-menu-flag">
+                        ENG
+                    </a>
                     
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/cn/#about" title="">
-                            
-                            关于我
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/cn/#experience" title="">
-                            
-                            经验
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/cn/#education" title="">
-                            
-                            教育
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Example dropdown menu">
-                            🇨🇳 中文
-                        </a>
-                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
-                            
-                            <a class="dropdown-item text-center nav-link" href="/fr"
-                                title="Cliquer ici pour changer en français">
-                                🇫🇷 FR
-                            </a>
-                            
-                            <a class="dropdown-item text-center nav-link" href="/en"
-                                title="Click here to switch to English">
-                                🇬🇧 ENG
-                            </a>
-                            
-                        </div>
-                    </li>
-                    
-                    
-
-                    
-                    <li class="nav-item navbar-text">
-                        
-                        <div class="text-center">
-                            <button id="theme-toggle">
-                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                                </svg>
-                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"></circle>
-                                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    
-
-                </ul>
-
+                </div>
             </div>
+            
+            
+
+            
+
+            
+
+            
+            
+
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand primary-font text-wrap" href="https://hugobertin.github.iocn">
+                        
+                        <img src="/favicon.ico" width="30" height="30"
+                            class="d-inline-block align-top">
+                        Hugo Bertin
+                        
+                    </a>
+                    <button type="button" class="custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto text-center">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+                        
+                        
+                        
+                        <li class="nav-item navbar-text">
+                            <a class="nav-link" href="/cn/#about" title="">
+                                
+                                关于我
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li class="nav-item navbar-text">
+                            <a class="nav-link" href="/cn/#experience" title="">
+                                
+                                经验
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li class="nav-item navbar-text">
+                            <a class="nav-link" href="/cn/#education" title="">
+                                
+                                教育
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li class="nav-item navbar-text">
+                            <a class="nav-link" href="/cn/#achievements" title="">
+                                
+                                认证
+                            </a>
+                        </li>
+                        
+                        
+
+                        
+                        <li class="nav-item navbar-text" style="padding-top: 0.2rem;">
+                            
+                            <div class="text-center">
+                                <button id="theme-toggle">
+                                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                    </svg>
+                                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="5"></circle>
+                                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </nav>
 </header>
 <div id="content">
 <section id="hero" class="py-5 align-middle">
-    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3 principal">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-8 content " id="primary-font">
                 <span class="subtitle">
                     你好， 我是
                 </span>
                 <h2>
-                    Hugo (雨果).
+                    Hugo (雨果)。
                 </h2>
                 <h3>
                     数字工程师
@@ -617,8 +667,9 @@ Hugo Bertin 中文
     
 </section>
 
-<section id="about" class="py-0 py-sm-5">
+<section id="about" class="py-5">
     <div class="container bg-transparent">
+        <span class="row py-4"></span>
         <h3 class="text-center bg-transparent">关于我</h3>
         <div class="bg-transparent row justify-content-center px-3 py-5">
             
@@ -662,64 +713,21 @@ Hugo Bertin 中文
     </div>
 </section>
 
+
+
+
+
+
 <section id="experience" class="py-5">
     <div class="container">
-        <h3 class="text-center">经验</h3>
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
-                <div class="experience-container px-3 pt-2">
-                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
-                        
-                        
-                        <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link active bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
-                                data-bs-toggle="pill"
-                                id='Sopra-Steria-2023年9月---至今-tab'
-                                data-bs-target='#pills-Sopra-Steria-2023年9月---至今'
-                                aria-controls='Sopra-Steria-2023年9月---至今' 
-                            >
-                                Sopra Steria
-                            </div>
-                        </li>
-                        
-                        
-                        
-                        <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
-                                data-bs-toggle="pill"
-                                id='Sopra-Steria-2023年4月---2023年9月-tab'
-                                data-bs-target='#pills-Sopra-Steria-2023年4月---2023年9月' 
-                                aria-controls='Sopra-Steria-2023年4月---2023年9月'
-                            >
-                                Sopra Steria
-                            </div>
-                        </li>
-                        
-                        
-                        
-                        <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
-                                data-bs-toggle="pill"
-                                id='FARECO---FAYAT-2021年9月---2022年2月-tab'
-                                data-bs-target='#pills-FARECO---FAYAT-2021年9月---2022年2月' 
-                                aria-controls='FARECO---FAYAT-2021年9月---2022年2月'
-                            >
-                                FARECO - FAYAT
-                            </div>
-                        </li>
-                        
-                        
-                    </ul>
-                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+        <span class="row py-4"></span>
+        <h3 class="text-center py-5">经验</h3>
+        <div class="timeline py-5">
+            
+            <div class="experience-container left">
+                <div class="experience-content">
+                    
+                    <div class="tab-content pt-2 bg-transparent primary-font" id="pills-tabContent">
                         
                         
                         <div 
@@ -729,20 +737,23 @@ Hugo Bertin 中文
                             aria-labelledby='pills-Sopra-Steria-2023年9月---至今-tab'
                         >
                             <div>
+                                
+                                <div class="pb-1 logo-holder"> 
+                                    <img src="/logo/logo-sopra_steria.png" class="company-logo" alt="">
+                                </div>
+                                
+                                
+                                <h5 class="pb-1" style="opacity: 0.7;">
+                                    2023年9月 - 至今
+                                </h5>
+                                
+                                
                                 <span class="h4">初级软件工程师</span>
                                 <small>-</small>
                                 <a href="https://www.soprasteria.com/home" target="_blank">Sopra Steria</a>
-                                <div class="pb-1">
-                                    <small>2023年9月 - 至今</small>
-                                    
-                                </div>
-
                                 
-                                <div class="py-2 featuredLink">
-                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href=https://example.com target="_blank">
-                                        Featured Link 
-                                    </a>
-                                </div>
+                                <hr>
+                                
                                 
                             </div>
 
@@ -755,90 +766,108 @@ Hugo Bertin 中文
 </ul>
                         </div>
                         
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-container right">
+                <div class="experience-content">
+                    
+                    <div class="tab-content pt-2 bg-transparent primary-font" id="pills-tabContent">
                         
                         
                         <div 
-                            class="tab-pane fade bg-transparent" 
+                            class="tab-pane fade show active bg-transparent" 
                             role="tabpanel"
                             id='pills-Sopra-Steria-2023年4月---2023年9月'
                             aria-labelledby='pills-Sopra-Steria-2023年4月---2023年9月-tab'
                         >
                             <div>
+                                
+                                <div class="pb-1 logo-holder"> 
+                                    <img src="/logo/logo-sopra_steria.png" class="company-logo" alt="">
+                                </div>
+                                
+                                
+                                <h5 class="pb-1" style="opacity: 0.7;">
+                                    2023年4月 - 2023年9月
+                                </h5>
+                                
+                                
                                 <span class="h4">软件开发毕业实习</span>
                                 <small>-</small>
                                 <a href="https://www.soprasteria.com/home" target="_blank">Sopra Steria</a>
                                 
-                                <div class="pb-1">
-                                    <small>2023年4月 - 2023年9月</small>
-                                    
-                                </div>
+                                <hr>
                                 
-                                
-                                <div class="py-2 featuredLink">
-                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href=https://example.com target="_blank">
-                                        Featured Link 
-                                    </a>
-                                </div>
                                 
                             </div>
 
-                            <div class="pt-2">
-                                <p>作为<a href="https://www.soprasteria.com/home">Sopra Steria</a>银行部门的实习生, 我有机会在法国农业信贷公司企业与投资银行担任顾问 (<a href="https://www.ca-cib.com/en">Crédit Agricole Corporate &amp; Investment Bank</a>)。</p>
+                            <p>作为<a href="https://www.soprasteria.com/home">Sopra Steria</a>银行部门的实习生, 我有机会在法国农业信贷公司企业与投资银行担任顾问 (<a href="https://www.ca-cib.com/en">Crédit Agricole Corporate &amp; Investment Bank</a>)。</p>
 <ul>
 <li>编写设计文档</li>
 <li>架构实现</li>
 <li>使用Java/Angular进行开发</li>
 <li>单元测试的创建和自动化</li>
 </ul>
-                            </div>
                         </div>
                         
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-container left">
+                <div class="experience-content">
+                    
+                    <div class="tab-content pt-2 bg-transparent primary-font" id="pills-tabContent">
                         
                         
                         <div 
-                            class="tab-pane fade bg-transparent" 
+                            class="tab-pane fade show active bg-transparent" 
                             role="tabpanel"
                             id='pills-FARECO---FAYAT-2021年9月---2022年2月'
                             aria-labelledby='pills-FARECO---FAYAT-2021年9月---2022年2月-tab'
                         >
                             <div>
+                                
+                                <div class="pb-1 logo-holder"> 
+                                    <img src="/logo/logo-fareco.png" class="company-logo" alt="">
+                                </div>
+                                
+                                
+                                <h5 class="pb-1" style="opacity: 0.7;">
+                                    2021年9月 - 2022年2月
+                                </h5>
+                                
+                                
                                 <span class="h4">开发与数据分析实习</span>
                                 <small>-</small>
                                 <a href="https://fareco.fayat.com/en" target="_blank">FARECO - FAYAT</a>
                                 
-                                <div class="pb-1">
-                                    <small>2021年9月 - 2022年2月</small>
-                                    
-                                </div>
+                                <hr>
                                 
-                                
-                                <div class="py-2 featuredLink">
-                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href=https://example.com target="_blank">
-                                        Featured Link 
-                                    </a>
-                                </div>
                                 
                             </div>
 
-                            <div class="pt-2">
-                                <p>道路交通模拟实习生：</p>
+                            <p>道路交通模拟实习生：</p>
 <ul>
 <li>使用Python和<a href="https://sumo.dlr.de/docs/index.html">SUMO</a>模拟器改进V2X技术研究的测试工具</li>
 </ul>
-                            </div>
                         </div>
-                        
                         
                     </div>
                 </div>
             </div>
+            
+
         </div>
+        
     </div>
 </section>
 
-
-<section id="education" class="py-5">
+<section id="education" class="py-4">
     <div class="container">
+        <span class="row py-5"></span>
         <h3 class="text-center">教育</h3>
         <div class="row justify-content-center py-5">
             
@@ -852,23 +881,26 @@ Hugo Bertin 中文
                             <div class="card-body">
                                 
                                 
-                                <div class="logo-holder"> 
-                                    <img src="/logo/logo-paris_cite.png" class="company-logo" alt="">
-                                </div>
-                                
 
                                 <div class="float-end">
-                                    <small>2023 - 2024</small>
-                                </div>
+                                    
+                                    <div class="logo-holder"> 
+                                        <img src="/logo/logo-paris_cite.png" class="company-logo" alt="">
+                                    </div>
+                                    
+                                </div>  
                                 <h5 class="card-title">日本语言与文明大学文凭 (Diplôme Universitaire)</h5>
                                 
                                 
                                 <a href="https://u-paris.fr/en/" target="_blank">
                                     <h6>
                                     Université Paris Cité - 巴黎西岱大学
-                                    </h6>
-                                </a>
+                                    </h6></a>
                                 
+
+                                <div class="mt-0 mb-3" style="opacity: 0.8;">
+                                    <small>2023 - 2025</small>
+                                </div>
 
                                 
                                 <div class="py-1 education-content">
@@ -891,23 +923,26 @@ Hugo Bertin 中文
                             <div class="card-body">
                                 
                                 
-                                <div class="logo-holder"> 
-                                    <img src="/logo/logo-isep.png" class="company-logo" alt="">
-                                </div>
-                                
 
                                 <div class="float-end">
-                                    <small>2020 - 2023</small>
-                                </div>
+                                    
+                                    <div class="logo-holder"> 
+                                        <img src="/logo/logo-isep.png" class="company-logo" alt="">
+                                    </div>
+                                    
+                                </div>  
                                 <h5 class="card-title">工程硕士，信息系统架构专业</h5>
                                 
                                 
                                 <a href="https://www.isep.fr/cycle-ingenieur/" target="_blank">
                                     <h6>
                                     Institut Supérieur d&#39;Électronique de Paris (ISEP) - 巴黎高等电子学院
-                                    </h6>
-                                </a>
+                                    </h6></a>
                                 
+
+                                <div class="mt-0 mb-3" style="opacity: 0.8;">
+                                    <small>2020 - 2023</small>
+                                </div>
 
                                 
                                 <div class="py-1 education-content">
@@ -945,23 +980,26 @@ Hugo Bertin 中文
                             <div class="card-body">
                                 
                                 
-                                <div class="logo-holder"> 
-                                    <img src="/logo/logo-uqam.jpg" class="company-logo" alt="">
-                                </div>
-                                
 
                                 <div class="float-end">
-                                    <small>2022 - 2023</small>
-                                </div>
+                                    
+                                    <div class="logo-holder"> 
+                                        <img src="/logo/logo-uqam.jpg" class="company-logo" alt="">
+                                    </div>
+                                    
+                                </div>  
                                 <h5 class="card-title">国际交流学期</h5>
                                 
                                 
                                 <a href="https://uqam.ca" target="_blank">
                                     <h6>
                                     Université du Québec à Montréal (UQÀM) - 蒙特利尔魁北克大学
-                                    </h6>
-                                </a>
+                                    </h6></a>
                                 
+
+                                <div class="mt-0 mb-3" style="opacity: 0.8;">
+                                    <small>2022 - 2023</small>
+                                </div>
 
                                 
                                 <div class="py-1 education-content">
@@ -991,17 +1029,20 @@ Hugo Bertin 中文
                                 
 
                                 <div class="float-end">
-                                    <small>2018 - 2020</small>
-                                </div>
+                                    
+                                </div>  
                                 <h5 class="card-title">MPSI/PSI预科班 (数学、物理与工程科学)</h5>
                                 
                                 
                                 <a href="https://www.isep.fr/classes-preparatoires-associees-2-3/" target="_blank">
                                     <h6>
                                     Cycle Préparatoire Associées ISEP-Stanislas
-                                    </h6>
-                                </a>
+                                    </h6></a>
                                 
+
+                                <div class="mt-0 mb-3" style="opacity: 0.8;">
+                                    <small>2018 - 2020</small>
+                                </div>
 
                                 
                                 <div class="py-1 education-content">
@@ -1028,23 +1069,26 @@ Hugo Bertin 中文
                             <div class="card-body">
                                 
                                 
-                                <div class="logo-holder"> 
-                                    <img src="/logo/logo-bnd.png" class="company-logo" alt="">
-                                </div>
-                                
 
                                 <div class="float-end">
-                                    <small>2018</small>
-                                </div>
+                                    
+                                    <div class="logo-holder"> 
+                                        <img src="/logo/logo-bnd.png" class="company-logo" alt="">
+                                    </div>
+                                    
+                                </div>  
                                 <h5 class="card-title">高中毕业证书</h5>
                                 
                                 
                                 <a href="https://www.bossuetnotredame.org/lycee-bossuet-notre-dame/" target="_blank">
                                     <h6>
                                     Bossuet Notre-Dame 高中
-                                    </h6>
-                                </a>
+                                    </h6></a>
                                 
+
+                                <div class="mt-0 mb-3" style="opacity: 0.8;">
+                                    <small>2018</small>
+                                </div>
 
                                 
                                 <div class="py-1 education-content">
@@ -1065,6 +1109,36 @@ Hugo Bertin 中文
     </div>
 </section>
 
+
+<section id="achievements" class="py-5">
+    <div class="container">
+        <span class="row py-4"></span>
+        <h3 class="text-center">认证</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/519e18ae-dd6d-4f32-a693-36220202d7e8/public_url" title="AWS Certified Cloud Practitioner" target="_blank">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="/images/certification/aws-certified-cloud-practitioner.png">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">AWS Certified Cloud Practitioner</h5>
+                            <div class="card-text secondary-font">
+                                由亚马逊网络服务培训与认证部门颁发
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -1139,7 +1213,7 @@ Hugo Bertin 中文
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2024  All Rights Reserved
+            &copy; 2026  All Rights Reserved
             
         </div>
     </div>

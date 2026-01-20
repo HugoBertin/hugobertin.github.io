@@ -2,28 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hugobertin.github.io/fr/tags/5g/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hugobertin.github.io/fr/blogs/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugobertin.github.io/fr/tags/du-paris-cit%C3%A9/</loc>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugobertin.github.io/fr/tags/g%C3%A9ographie/</loc>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugobertin.github.io/fr/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="datesformat"
-                href="https://hugobertin.github.io/datesformat/"
-                />
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="singlepages"
                 href="https://hugobertin.github.io/singlepages/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="terms"
-                href="https://hugobertin.github.io/terms/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -41,23 +34,21 @@
                 href="https://hugobertin.github.io/fr/"
                 />
   </url><url>
-    <loc>https://hugobertin.github.io/fr/blogs/1-5g/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
+    <loc>https://hugobertin.github.io/fr/tags/japon/</loc>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hugobertin.github.io/fr/tags/isep/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
+    <loc>https://hugobertin.github.io/fr/tags/kansai/</loc>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugobertin.github.io/fr/blogs/kansai_presentation/</loc>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugobertin.github.io/fr/tags/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
                 href="https://hugobertin.github.io/cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="datesformat"
-                href="https://hugobertin.github.io/datesformat/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -71,14 +62,18 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="terms"
-                href="https://hugobertin.github.io/terms/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="fr"
                 href="https://hugobertin.github.io/fr/tags/"
                 />
+  </url><url>
+    <loc>https://hugobertin.github.io/fr/tags/5g/</loc>
+    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugobertin.github.io/fr/blogs/1_5g/</loc>
+    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugobertin.github.io/fr/tags/isep/</loc>
+    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugobertin.github.io/fr/tags/technologies/</loc>
     <lastmod>2020-11-24T00:00:00+00:00</lastmod>
@@ -91,11 +86,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="datesformat"
-                href="https://hugobertin.github.io/datesformat/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="https://hugobertin.github.io/en/categories/"
                 />
@@ -103,11 +93,6 @@
                 rel="alternate"
                 hreflang="singlepages"
                 href="https://hugobertin.github.io/singlepages/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="terms"
-                href="https://hugobertin.github.io/terms/categories/"
                 />
     <xhtml:link
                 rel="alternate"

@@ -45,3 +45,15 @@ body *::selection {
     color: var(--text-color) !important;
     background-color: var(--primary-color) !important;
 }
+
+.custom-close {
+    background: none;
+    color: var(--text-color) !important;
+    font-size: 2rem;
+    border: none;
+    opacity: 1;
+}
+
+.custom-close::before {
+    content: "×";
+}

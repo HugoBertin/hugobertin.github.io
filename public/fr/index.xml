@@ -6,13 +6,20 @@
     <description>Recent content on Hugo Bertin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Tue, 24 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hugobertin.github.io/fr/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Kansai : Exister dans l&#39;ombre de Tokyo</title>
+      <link>https://hugobertin.github.io/fr/blogs/kansai_presentation/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://hugobertin.github.io/fr/blogs/kansai_presentation/</guid>
+      <description>Introduction Cette article a pour but de présenter la région du Kansai et ses atouts qui lui permet de se distinguer par rapport à la mégalopole de Tokyo. Ainsi, voir comment le Kansai existe dans l&amp;rsquo;ombre de Tokyo.&#xA;Tout d&amp;rsquo;abord, pour présenter, on appelle en japonais la région du Kansai 関西地方 (Kan sai Chi hō) et parfois 近畿地方 (Kin ki Chi hō). 地方 (Chi hō) est le le terme qu&amp;rsquo;on place après le nom d&amp;rsquo;une région pour désigner une région.</description>
+    </item>
+    <item>
       <title>Info ou intox sur la 5G</title>
-      <link>https://hugobertin.github.io/fr/blogs/1-5g/</link>
+      <link>https://hugobertin.github.io/fr/blogs/1_5g/</link>
       <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://hugobertin.github.io/fr/blogs/1-5g/</guid>
+      <guid>https://hugobertin.github.io/fr/blogs/1_5g/</guid>
       <description>Introduction Ah la 5G, on en a tous entendu parler que ce soit à la télé ou sur nos téléphones par les pubs des opérateurs ou de nos politiciens. La 5G pour ceux qui ne connaissent pas trop c’est la \( 5^{ème}\) génération de standards pour la téléphonie mobile.&#xA;On a entendu dire que c’était révolutionnaire, mais on m’avait aussi dit que je verrai des voitures volantes et des chaussures auto laçantes avant 2020, donc bon.</description>
     </item>
   </channel>
