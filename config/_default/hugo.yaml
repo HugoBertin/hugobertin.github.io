@@ -96,13 +96,13 @@ languages:
         newPage: false
       socialLinks:
         fontAwesomeIcons:
-          - icon: fab fa-github
-            url: https://github.com/HugoBertin
+          # - icon: fab fa-github
+          #   url: https://github.com/HugoBertin
           - icon: fab fa-linkedin-in
             url: https://www.linkedin.com/in/hugo-bertin-6160031b8/
         customIcons:
           - icon: /favicon.ico
-            url: "https://example.com"
+            url: "https://hugobertin.github.io/"
       
     # About FR
     about:
@@ -132,7 +132,7 @@ languages:
       enable: true
       title: "Expérience"
       items:
-        - job: "Ingénieur logiciel - Junior"
+        - job: "Ingénieur logiciel"
           company: "Sopra Steria"
           companyLogo: "/logo/logo-sopra_steria.png"
           companyUrl: "https://www.soprasteria.com/fr"
@@ -294,7 +294,7 @@ languages:
       #   enable: true
       #   disableFeaturedImage: false
       socialNetworks:
-        github: https://github.com/HugoBertin
+        # github: https://github.com/HugoBertin
         linkedin: https://www.linkedin.com/in/hugo-bertin-6160031b8/
         # twitter: https://twitter.com
         # instagram: https://instagram.com
@@ -386,13 +386,13 @@ languages:
         newPage: false
       socialLinks:
         fontAwesomeIcons:
-          - icon: fab fa-github
-            url: https://github.com/HugoBertin
+          # - icon: fab fa-github
+          #   url: https://github.com/HugoBertin
           - icon: fab fa-linkedin-in
             url: https://www.linkedin.com/in/hugo-bertin-6160031b8/
         customIcons:
           - icon: /favicon.ico
-            url: "https://example.com"
+            url: "https://hugobertin.github.io/"
         
     # About EN
     about:
@@ -422,7 +422,7 @@ languages:
       enable: true
       title: "Experience"
       items:
-        - job: "Junior Software Engineer"
+        - job: "Software Engineer"
           company: "Sopra Steria"
           companyLogo: "/logo/logo-sopra_steria.png"
           companyUrl: "https://www.soprasteria.com/home"
@@ -547,7 +547,7 @@ languages:
     
     footer:
       socialNetworks:
-        github: https://github.com/HugoBertin
+        # github: https://github.com/HugoBertin
         linkedin: https://www.linkedin.com/in/hugo-bertin-6160031b8/
         # twitter: https://twitter.com
         # instagram: https://instagram.com
@@ -620,13 +620,13 @@ languages:
         newPage: false
       socialLinks:
         fontAwesomeIcons:
-          - icon: fab fa-github
-            url: https://github.com/HugoBertin
+          # - icon: fab fa-github
+          #   url: https://github.com/HugoBertin
           - icon: fab fa-linkedin-in
             url: https://www.linkedin.com/in/hugo-bertin-6160031b8/
         customIcons:
           - icon: /favicon.ico
-            url: "https://example.com"
+            url: "https://https://hugobertin.github.io/"
         
     # About CN
     about:
@@ -656,7 +656,7 @@ languages:
       enable: true
       title: "经验"
       items:
-        - job: "初级软件工程师"
+        - job: "软件工程师"
           company: "Sopra Steria"
           companyLogo: "/logo/logo-sopra_steria.png"
           companyUrl: "https://www.soprasteria.com/home"
@@ -780,7 +780,7 @@ languages:
 
     footer:
         socialNetworks:
-          github: https://github.com/HugoBertin
+          # github: https://github.com/HugoBertin
           linkedin: https://www.linkedin.com/in/hugo-bertin-6160031b8/
           # twitter: https://twitter.com
           # instagram: https://instagram.com
