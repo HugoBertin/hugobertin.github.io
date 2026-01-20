@@ -57,3 +57,8 @@ body *::selection {
 .custom-close::before {
     content: "×";
 }
+
+
+body {
+    background-color: transparent !important;
+}
